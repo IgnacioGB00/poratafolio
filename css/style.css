@@ -1,0 +1,75 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: #100B16;
+    overflow-x: hidden;
+}
+.border-right{
+    border-right: 1px solid #4B2870;
+    height: 100%;
+    padding: 0 0 0 1em;
+}
+.border-left{
+    border-left: 1px solid #4B2870;
+    padding: 0 1em 0 0;
+    height: 100%;
+}
+.border-bottom{
+    border-bottom: 1px solid #4B2870;
+}   
+main{
+    margin: 0 1em;
+    border-left: 1px solid #4B2870;
+    border-right: 1px solid #4B2870;
+}
+header,section{
+    width: 100%;
+}
+#logo{
+    font-size: 1.9em;
+    font-weight: bold;
+    color: #C3E2FF;
+    text-decoration: none;
+}
+#burgerIcon{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 10px;
+    width: 100%;
+    grid-column: 2/3;
+    height: 100%;
+}
+#burgerIcon, #logo{
+    padding: 1em;
+}
+#burgerIcon .bar{
+    height: 15px;
+    width: 65px;
+    background: #7200FB;
+}
+.colorText{
+    color: #C3E2FF;
+}
+.grid{
+    display: grid;
+}
+.gird-colum{
+    grid-template-columns: repeat(2, 1fr);
+}
+.flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#hamburgerContent{
+    display: none;
+}
