@@ -3,12 +3,21 @@
     margin: 0;
     box-sizing: border-box;
 }
+@font-face {
+    font-family: 'inter';
+    src: url('../fonts/Inter-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+
+}
 html{
     scroll-behavior: smooth;
 }
 body{
     background: #100B16;
     overflow-x: hidden;
+    font-family: 'inter', sans-serif;
 }
 .border-right{
     border-right: 1px solid #4B2870;
@@ -27,15 +36,24 @@ main{
     margin: 0 1em;
     border-left: 1px solid #4B2870;
     border-right: 1px solid #4B2870;
+    height: 100vh;
 }
 header,section{
     width: 100%;
+    height: 100%;
+    display: grid;
+}
+
+#mainNav{
+    height: 11vh;
+    grid-row: 1/2;
 }
 #logo{
-    font-size: 1.9em;
+    font-size: 2em;
     font-weight: bold;
     color: #C3E2FF;
     text-decoration: none;
+
 }
 #burgerIcon{
     display: flex;
@@ -57,12 +75,13 @@ header,section{
 .colorText{
     color: #C3E2FF;
 }
-.grid{
-    display: grid;
-}
-.gird-colum{
-    grid-template-columns: repeat(2, 1fr);
-}
+/* .grid{ */
+/*     display: grid; */
+/*  */
+/* } */
+/* .gird-colum{ */
+/*     grid-template-columns: repeat(2, 1fr); */
+/* } */
 .flex{
     display: flex;
     flex-direction: row;
@@ -71,5 +90,51 @@ header,section{
 }
 
 #hamburgerContent{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #100B16;
+    z-index: 10;
     display: none;
+}
+.TitleColor{
+    color: #91BBE2;
+    font-weight: 700;
+}
+h1, header p{
+    text-align: center;
+}
+h1{
+ font-size: 66px; 
+ line-height: 1.3;
+ grid-row: 2/3;
+ padding: 3px 0;
+
+}
+#box{
+    height: 15vh;
+}
+
+header .colorText{
+    font-size: 2em;
+    font-weight: 600;
+}
+.border-bottom{
+    border-bottom: 1px solid #4B2870;
+}
+.buttonPurple{
+    margin: 1em;
+    background-color: #7200FB;
+    border: none;
+    color: #91BBE2;
+    font-family: 'inter', sans-serif;
+    font-size: 1.5em;
+    font-weight: 600;
+    justify-self: center;
+    align-self: center;
+    border-radius: 10px;
+    padding: 0.5em 1.5em;
+    cursor: pointer;
 }
