@@ -24,6 +24,12 @@ body{
     height: 100%;
     padding: 0 0 0 1em;
 }
+ul li {
+    list-style: none;
+}
+ul li a{
+    text-decoration: none;
+}
 .border-left{
     border-left: 1px solid #4B2870;
     padding: 0 1em 0 0;
@@ -163,4 +169,10 @@ header .colorText{
 section p{
     font-size: 25px;
     line-height: 1.5;
-}   
+}  
+
+.project li a{
+    font-size: 2em;
+    padding: 1em;
+    display: block;
+}
