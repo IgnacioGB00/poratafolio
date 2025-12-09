@@ -159,8 +159,8 @@ header .colorText{
 
 .title{
     text-align: center;
-    font-size: 90px;
-    padding: 1em 0;
+    font-size: 83px;
+    padding: 0.5em 0;
 }
 .imgConteiner{
     height: 500px;
@@ -173,6 +173,36 @@ section p{
 
 .project li a{
     font-size: 2em;
+}
+
+.project li a, .urlContact li a{
     padding: 1em;
     display: block;
+     word-break: break-word;
+}
+
+.urlContact li{
+    width: 100%;
+}
+
+.urlContact li a{
+    font-size: 2.5em;
+    font-weight: 600;
+    width: 100%;
+    text-align: center;
+}
+
+#Contact .imgConteiner{
+    height: 380px;
+}
+
+footer{
+    width: 100%;
+    background: #C3E2FF;
+    text-align: center;
+}
+footer h3{
+    padding: 1em;
+    color: #100B16;
+    font-size: 3em;
 }
