@@ -95,7 +95,9 @@ header p{
     text-align: center;
 }
     
-  
+.notMoviel{
+    display: none;
+}
       
    
 
@@ -255,4 +257,53 @@ footer h3{
     padding: 1em;
     color: #100B16;
     font-size: 3em;
+}
+
+@media(width >= 1200px){
+    header, section{
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    #mainNav{
+        height: 16vh;
+    }
+    #burgerIcon{
+        display: none;
+    }
+    #hamburgerContent{
+        position: static;
+        background-color: transparent;
+        flex-direction: row;
+        height: auto;
+        grid-column: 2/3;
+        padding: 0 1em;
+        border: none;
+    }
+    #hamburgerContent ul {
+        flex-direction: row;
+        padding: 0;
+        align-self: start;
+        justify-self: start;
+        
+    }
+    #logo{
+        height: 100%;
+        font-size: 40px;
+        align-self: center;
+        justify-self: end;
+        
+    }
+    #hamburgerContent ul li a{
+        font-size: 1.3em;
+        width: auto;
+        font-weight: normal;
+        border: none;
+    }
+
+    #languageSelect{
+        margin-top: 0;
+        font-size: 1.3em;
+        border: none;
+    }
 }
