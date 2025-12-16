@@ -56,6 +56,9 @@ header,section{
 header{
     position: relative;
 }
+header #hamburgerContent ul{
+    border: none;
+}
 #mainNav{
     height: 11vh;
     grid-row: 1/2;
@@ -192,7 +195,11 @@ header .colorText{
     font-weight: 600;
 }
 
-
+.button-Border{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
 
 .buttonPurple{
     margin: 1em;
@@ -261,12 +268,18 @@ footer h3{
 
 @media(width >= 1200px){
     header, section{
-        height: 100vh;
+        height: 95vh;
         overflow: hidden;
     }
 
+    header{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, auto);
+    }
     #mainNav{
-        height: 16vh;
+        height: 13vh;
+        grid-column: 1/4;
+        grid-row: 1/2;
     }
     #burgerIcon{
         display: none;
@@ -279,13 +292,15 @@ footer h3{
         grid-column: 2/3;
         padding: 0 1em;
         border: none;
+        height: 100%;
     }
-    #hamburgerContent ul {
+   header #hamburgerContent ul {
         flex-direction: row;
         padding: 0;
         align-self: start;
         justify-self: start;
-        
+        border-right: 2px solid #4B2870;
+        border-left: 2px solid #4B2870;
     }
     #logo{
         height: 100%;
@@ -305,5 +320,42 @@ footer h3{
         margin-top: 0;
         font-size: 1.3em;
         border: none;
+    }
+    header h1{
+        grid-column: 1/4;
+        grid-row: 2/3;
+        padding: 0;
+        height: 16vh;
+    }
+    #box{
+        grid-column: 1/2;
+        grid-row: 3/4;
+        height: 100%;
+        width: 100%;
+        
+    }
+   header .notMoviel{
+        display: block;
+        font-size: 1.2em;
+        grid-column: 3/4;
+        line-height: 1.5;
+    }
+    #work, #box{
+        border-right: 2px solid #4B2870;
+    }
+    #work{
+        border-bottom: none;
+    }
+    header .colorText{
+        font-weight: normal;
+        text-align: left;
+
+    }
+   .button-Border{
+        grid-column: 3/4;
+        grid-row: 4/5;
+        justify-self: center;
+        border-left: 2px solid #4B2870;
+        width: 100%;
     }
 }
