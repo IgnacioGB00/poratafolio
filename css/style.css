@@ -268,8 +268,8 @@ footer h3{
 
 @media(width >= 1200px){
     header, section{
-        height: 95vh;
-        overflow: hidden;
+        height: 100dvh;
+        overflow-y: hidden;
     }
 
     header{
@@ -325,7 +325,7 @@ footer h3{
         grid-column: 1/4;
         grid-row: 2/3;
         padding: 0;
-        height: 16vh;
+        font-size: 6rem;
     }
     #box{
         grid-column: 1/2;
@@ -357,5 +357,27 @@ footer h3{
         justify-self: center;
         border-left: 2px solid #4B2870;
         width: 100%;
+    }
+    #About{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+    #About .title{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        
+    }
+    #About .imgConteiner{
+        grid-column: 2/3;
+        grid-row: 1/5;
+        height: 100%;
+        border-left: 2px solid #4B2870;
+    }
+    #About p{
+        grid-column: 1/2;
+    }
+    section .title{
+        font-size: 12rem;
+        padding: 0;
     }
 }
