@@ -380,4 +380,61 @@ footer h3{
         font-size: 12rem;
         padding: 0;
     }
+
+    #works{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(5, auto);
+        border-bottom: #4B2870 2px solid;
+    }
+    #works .title, #Contact .title{
+        grid-column: 1/4;
+        grid-row: 1/2;
+    }
+    #works .imgConteiner{
+        grid-column: 2/3;
+        grid-row: 2/6;
+        border-left: #4B2870 2px solid;
+        border-right: #4B2870 2px solid;
+        border-bottom: none;
+        height: 100%;
+    }
+    .project{
+        grid-row: 2/5;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: stretch;
+        padding: 2em 0;
+    }
+    .project li a{
+        font-size: 2.5em;
+    }
+
+    #Contact{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, auto);
+        margin: 1em 0;
+        border-bottom: #4B2870 2px solid;
+    }  
+    #Contact .imgConteiner{
+        grid-column: 1/2;
+        grid-row: 2/5;
+        border-right: 2px solid #4B2870;
+        height: 100%; 
+        border-bottom: none;
+    }
+    #Contact .urlContact{
+        grid-column: 2/3;
+        grid-row: 2/5;
+        align-self: stretch;
+        justify-self: stretch;
+    }
+     #Contact .urlContact li a{
+        font-size: 3em;
+        text-align: right;
+     }
+     #email{
+        border-bottom: none;
+     }
 }
