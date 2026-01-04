@@ -6,6 +6,7 @@
     <title>Portafolio</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/canvas.js" defer></script>
+    <script src="js/language.js" defer></script>
 </head>
 <body>
     <main >
@@ -14,7 +15,7 @@
         </canvas>
         <header class="grid grid-colum">
             <nav id="mainNav" class="flex border-bottom">
-                <a href="#" class="border-right" id="logo"> IG</a>
+                <a href="index.html" class="border-right" id="logo"> IG</a>
                 <input title="BurgerMenu" type="checkbox" id="BurgerMenu">
                 <label id="burgerIcon" 
                 for="BurgerMenu" class="border-left">
@@ -23,9 +24,9 @@
                 </label>
                 <nav id="hamburgerContent" class="border-top">
                     <ul class="border-left">
-                        <li><a href="#" class="text colorText border-bottom border-top">About</a></li>
-                        <li><a href="#" class="text colorText border-bottom">Works</a></li>
-                        <li><a href="#" class="text colorText border-bottom">Contacts</a></li>
+                        <li><a href="#About" data-key="nav-about" class="text colorText border-bottom border-top">About</a></li>
+                        <li><a href="#works" data-key="nav-works" class="text colorText border-bottom">Works</a></li>
+                        <li><a href="#Contact" data-key="nav-contact" class="text colorText border-bottom">Contacts</a></li>
                     </ul>
                     <select name="language" id="languageSelect" class="colorText text border-bottom border-left">
                         <option value="en">EN</option>
@@ -36,26 +37,26 @@
             </nav>
             <h1 class="TitleColor border-bottom">Ignacio Gómez Barrantes</h1>
             <div id="box" class=" border-bottom"></div>
-            <p class="text colorText notMoviel border-left border-bottom">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <p class="text colorText border-bottom " id="work">Web
+            <p class="text colorText notMoviel border-left border-bottom" data-key="header-desc">Passionate about building interactive web applications and pixel-perfect interfaces. My goal is to transform ideas into high-performing websites using the latest front-end technologies and design principles.</p>
+            <p class="text colorText border-bottom " data-key="header-role" id="work">Web
 Designer & Developer Front End.</p>
                 <div class="button-Border">
-                    <button type="button" class="buttonPurple border-bottom">Contact</button>
+                    <button type="button" data-key="btn-contact" class="buttonPurple border-bottom" id="whatsappBtn">Contact</button>
                 </div>
                 
         </header>
         <section id="About" class="border-top">
-                <h2 class="title TitleColor border-bottom">About</h2>
+                <h2 class="title TitleColor border-bottom" data-key="title-about">About</h2>
                 <div class="border-bottom imgConteiner"></div>
-                <p class="text colorText border-bottom"><b>Tools:</b> Figma, Adobe XD, Photoshop , Illustrator, 
+                <p class="text colorText border-bottom"><b data-key="tools">Tools:</b> Figma, Adobe XD, Photoshop , Illustrator, 
                     Git, GitHub, VSCode and AI</p>
-                <p class="text colorText border-bottom"><b>Skills:</b>  HTML5, CSS3, JavaScript and WordPress</p>
-                <p class="text colorText border-bottom">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                <p class="text colorText border-bottom"><b data-key="skills">Skills:</b>  HTML5, CSS3, JavaScript and WordPress</p>
+                <p class="text colorText border-bottom" data-key="about-desc">
+                    My journey in the tech world started with a curiosity for how things work on the web. Today, I use tools like Figma and VS Code to bring concepts to life. I believe that every project is an opportunity to learn something new and to push the boundaries of what's possible on the front end. I value clean code, accessibility, and meaningful aesthetics.
                 </p>
         </section>
         <section id="works">
-            <h2 class="title TitleColor border-bottom">Works</h2>
+            <h2 class="title TitleColor border-bottom" data-key="title-works">Works</h2>
             <div class="imgConteiner border-bottom"></div>
             <ul class="project">
                 <li><a href="#" class="colorText border-bottom">Name</a></li>
@@ -69,13 +70,14 @@ Designer & Developer Front End.</p>
             </ul>
         </section>
         <section id="Contact">
-            <h2 class="title TitleColor border-bottom">Contact</h2>
+            <h2 class="title TitleColor border-bottom" data-key="title-contact">Contact</h2>
             <div class="imgConteiner border-bottom"></div>
             <ul class="urlContact">
-                <li><a href="#" class="colorText border-bottom">Whatsapp</a></li>
-                <li><a href="#" class="colorText border-bottom">Linkedin</a></li>
-                <li><a href="#" class="colorText border-bottom">Github</a></li>
-                <li><a href="#" class="colorText border-bottom" id="email">ignaciogb900@gmail.com</a></li>
+                <li><a href="https://wa.me/50664033299" target="_blank" class="colorText border-bottom">Whatsapp</a></li>
+                <li><a href="https://www.linkedin.com/in/ignacio-gomez-344b8a20a/"
+                    target="_blank" class="colorText border-bottom">Linkedin</a></li>
+                <li><a href="https://github.com/IgnacioGB00" target="_blank" class="colorText border-bottom">Github</a></li>
+                <li><a href="mailto:ignaciogb900@gmail.com" class="colorText border-bottom" id="email">ignaciogb900@gmail.com</a></li>
             </ul>
         </section>
     </main>
