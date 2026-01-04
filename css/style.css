@@ -255,7 +255,7 @@ header .colorText{
     /* Asegúrate de que tengan un tamaño para que el canvas sepa a dónde ir */ 
 }
 section p{
-    font-size: 25px;
+    font-size: 3vh;
     line-height: 1.5;
 }  
 
