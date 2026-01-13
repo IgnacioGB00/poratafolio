@@ -93,6 +93,7 @@ header #hamburgerContent ul{
     font-weight: bold;
     color: #C3E2FF;
     text-decoration: none;
+    z-index: 2;
 
 }
 #burgerIcon{
