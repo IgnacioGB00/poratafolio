@@ -300,11 +300,6 @@ footer h3{
         height: 100dvh;
         overflow-y: hidden;
     }
-
-    header{
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(4, auto);
-    }
     #mainNav{
         height: 13vh;
         grid-column: 1/4;
@@ -350,12 +345,7 @@ footer h3{
         font-size: 1.3em;
         border: none;
     }
-    header h1{
-        grid-column: 1/4;
-        grid-row: 2/3;
-        padding: 0;
-        font-size: 6rem;
-    }
+  
     #box{
         grid-column: 1/2;
         grid-row: 3/4;
@@ -363,12 +353,7 @@ footer h3{
         width: 100%;
         
     }
-   header .notMoviel{
-        display: block;
-        font-size: 1.2em;
-        grid-column: 3/4;
-        line-height: 1.5;
-    }
+  
     #work, #box{
         border-right: 2px solid #4B2870;
     }
@@ -380,13 +365,7 @@ footer h3{
         text-align: left;
 
     }
-   .button-Border{
-        grid-column: 3/4;
-        grid-row: 4/5;
-        justify-self: center;
-        border-left: 2px solid #4B2870;
-        width: 100%;
-    }
+   
     #About{
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(4, 1fr);

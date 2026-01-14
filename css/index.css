@@ -1,0 +1,27 @@
+@media(width >= 1200px){
+      header{
+        grid-template-rows: repeat(4, auto);
+         grid-template-columns: repeat(3, 1fr);
+    }
+      header h1{
+        grid-column: 1/4;
+        grid-row: 2/3;
+        padding: 0;
+        font-size: 6rem;
+    }
+
+     header .notMoviel{
+        display: block;
+        font-size: 1.2em;
+        grid-column: 3/4;
+        line-height: 1.5;
+    }
+
+    .button-Border{
+        grid-column: 3/4;
+        grid-row: 4/5;
+        justify-self: center;
+        border-left: 2px solid #4B2870;
+        width: 100%;
+    }
+}
