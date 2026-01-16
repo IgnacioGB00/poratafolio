@@ -542,4 +542,5 @@ footer h3{
 .buttonPurple:active {
     transform: scale(0.95); /* Se encoge un poco al presionarlo */
 }
+
 }
