@@ -2,8 +2,6 @@
       header{
         grid-template-rows: repeat(4, auto);
          grid-template-columns: repeat(3, 1fr);
-         justify-items: center;
-         align-items: center;
     }
       header h1{
         grid-column: 1/4;

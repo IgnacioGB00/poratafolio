@@ -40,10 +40,14 @@ picture img{
          grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(6, 1fr);
     }
+    section .title{
+        height: 26vh;
+    }
    #nameProject{
         grid-row: 2/3;
         grid-column: 1/3;
         height: 100%;
+        padding: 38px;
     }
     #mockupTwo{
         grid-row: 3/5;
@@ -101,6 +105,98 @@ picture img{
     header .buttonPurple{
         grid-row: 6/7;
         grid-column: 3/4;
+    }
+
+    #Overview{
+        grid-template-columns: repeat(2, auto) !important;
+        grid-template-rows: 26% 74% ;
+    }
+
+    #Overview h2{
+        grid-column: 1/3;
+    }
+
+  #Overview picture{
+    grid-row: 2/3;
+    height: 100%;
+     border-left: 2px solid #4B2870 !important;
+  }
+
+  section .title{
+        height: 26vh;
+    }
+
+    #Overview p{
+        border-bottom: none;
+    }
+    #MyRole{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    #Process, #MyRole{
+      height: auto;  
+    }
+
+    #Process{
+        grid-template-columns: repeat(2, auto) !important;
+    } 
+
+    #Process h2{
+        grid-column: 1/3;
+    }
+
+    .subTitle{
+        font-size: 7.438rem;
+        padding: 0;
+    }
+
+    #Research{
+        grid-column: 1/3;
+    }
+    #textResearch{
+        grid-column: 1/2;
+        height: 79vh; 
+    }
+    #ImgResearch{
+        grid-column: 2/3;
+        grid-row: 3/4;
+        width: 100%;
+    }
+    #ImgResearch img{
+        width: 100%;
+    }
+    #UIElements{
+        grid-column: 2/3;
+        grid-row: 4/5;
+    }
+
+    #imgElementsOne{
+        grid-column: 1/2;
+        grid-row: 4/6;
+    }
+    #imgElementsTwo{
+        grid-column: 2/3;
+        grid-row: 5/6;
+    }
+
+    #imgElementsThree{
+        grid-row: 6/7;
+        grid-column: 1/3;
+    }
+
+    #Wireframes{
+        grid-row: 7/8;
+        grid-column: 1/2;
+    }
+    #imgWireframesOne{
+        grid-column: 2/3;
+        grid-row: 7/9;
+    }
+    #imgWireframesTwo{
+        grid-column: 1/2;
+        grid-row: 8/9;
     }
 
 }
