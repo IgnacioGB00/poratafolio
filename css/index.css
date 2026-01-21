@@ -1,6 +1,6 @@
 header .colorText{
     font-size: 2em;
-    font-weight: 600;
+    /* font-weight: 600; */
 }
 
 @media(width >= 1200px){
