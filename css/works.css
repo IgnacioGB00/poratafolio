@@ -41,6 +41,10 @@ picture img{
         align-items: center;
      }
 
+header .colorText{
+    font-size: 2em;
+}
+
 @media(width >= 1200px){
     header{
          grid-template-columns: repeat(3, 1fr);
@@ -149,7 +153,7 @@ picture img{
     }
 
     #Process{
-        grid-template-columns: repeat(2, auto) !important;
+        grid-template-columns: 40% 60% !important;
     } 
 
     #Process h2{
@@ -186,10 +190,19 @@ picture img{
     #imgElementsOne{
         grid-column: 1/2;
         grid-row: 4/6;
+       
     }
+
+     #imgElementsOne img{
+        object-fit: contain;
+     }
     #imgElementsTwo{
         grid-column: 2/3;
         grid-row: 5/6;
+    }
+
+    #imgElementsTwo img{
+        object-fit: contain;
     }
 
     #imgElementsThree{
@@ -205,6 +218,8 @@ picture img{
     #imgWireframesOne{
         grid-column: 2/3;
         grid-row: 7/9;
+        height: 90vh;
+        width: 100%;
     }
     #imgWireframesTwo{
         grid-column: 1/2;
@@ -231,7 +246,11 @@ picture img{
         grid-row: 2/4;
         border-left: #4B2870 solid 2px;
      }
+     h3{
+        overflow-wrap: break-word;
+     }
 
-    
-
+     header .colorText{
+    font-size: 1.5em;
+}
 }
