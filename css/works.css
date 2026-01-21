@@ -104,7 +104,7 @@ header .colorText{
     #explanation{
         grid-row: 2/4;
         grid-column: 3/4;
-        height:44vh;
+        height:46vh;
     }
     #rol{
         grid-column: 3/4;
