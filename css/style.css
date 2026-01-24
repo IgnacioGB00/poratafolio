@@ -89,7 +89,7 @@ header #hamburgerContent ul{
     height: 100%;
 }
 #logo{
-    font-size: 45px;
+    font-size: 36px;
     font-weight: bold;
     color: #C3E2FF;
     text-decoration: none;
@@ -110,8 +110,8 @@ header #hamburgerContent ul{
     padding: 20px 1em;
 }
 #burgerIcon .bar{
-    height: 15px;
-    width: 65px;
+    height: 9px;
+    width: 59px;
     background: #7200FB;
 }
 .colorText{
