@@ -13,6 +13,7 @@ const works = {
         mockupThree: "../img/tabledMockupDesktop.jpg",
 
         // Overview
+         titleOverview: "Overview",
         textOverview: "Temple of Tranquility is a UX/UI-focused web project inspired by LEGO and traditional Japanese architecture. The main goal was to design a calm, immersive digital experience that highlights a fictional modular LEGO set. The interface prioritizes clarity, visual hierarchy, and smooth navigation, allowing users to explore the concept, modular structure, and individual parts in an intuitive way. The design process emphasized consistency, responsive layouts, and performance optimization, ensuring a seamless experience across desktop, tablet, and mobile devices.",
         overviewImg: {
             mobile: "../img/OverviewCell.jpg",
@@ -41,27 +42,28 @@ const works = {
     "techPlus": {
         // --- CAMBIA ESTOS DATOS POR LOS DE TU NUEVO PROYECTO ---
         nameProject: "TechPlus",
-        explanation: "Descripción corta del proyecto TechPlus aquí...",
-        rol: "<b>Rol:</b> Tu rol aquí",
-        stack: "<b>Stack:</b> Las tecnologías aquí",
+        explanation: "TechPlus is a modern podcast platform focused on clarity, accessibility, and user experience. The project is designed to help users discover, explore, and engage with audio content through a clean interface, strong visual hierarchy, and responsive layouts that work seamlessly across devices.",
+        rol: "<b>Rol:</b> Web Designer and Front-End Developer",
+        stack: "<b>Stack:</b> HTML, CSS, JS",
         hero: { mobile: "../img/TechPlusLabtop.jpg", desktop: "../img/TechPlusLabtopCell.jpg" },
         mockupTwo: "../img/TechPlusTablet.jpg",
-        mockupThree: "../img/TechPluswireframeCellDesktop.jpg",
+        mockupThree: "../img/TechPlusbuttonCellPhone.jpg",
         titleOverview: "Overview",
-        textOverview: "Texto largo sobre el proyecto TechPlus...",
+        textOverview: "TechPlus is a UX/UI and front-end web project focused on creating a clean and intuitive platform for discovering and exploring podcast episodes. The project emphasizes clear content structure, visual hierarchy, and responsive design to make audio content easy to browse across all devices. The interface was designed to highlight episodes, topics, and calls-to-action while maintaining a modern and minimal aesthetic. Built using HTML, CSS, and JavaScript, the project reflects a user-centered approach that combines thoughtful UX decisions with efficient front-end development to deliver a smooth and accessible listening experience.",
         overviewImg: { mobile: "../img/tp-ov-m.jpg", desktop: "../img/tp-ov-d.jpg" },
 
-          /* roleText: 'Temple of Tranquility.. ', */
+        roleText: 'In this project, I was responsible for both the UX/UI design and front-end development, overseeing the process from initial concept to final implementation. I designed the user experience with a strong focus on usability, accessibility, and content clarity, ensuring that users can easily discover podcast episodes and navigate the platform without friction. On the UI side, I defined the visual direction, layout structure, typography, and visual hierarchy to create a clean and modern interface aligned with the project’s goals. I also translated the designs into a fully functional front-end using HTML, CSS, and JavaScript, maintaining design consistency across all screen sizes.',
 
-        textResearch: "Investigación de TechPlus...",
+        textResearch: "During the research phase, I analyzed popular podcast websites and platforms to understand how they structure content, highlight episodes, and engage listeners. I focused on usability patterns that make browsing episodes intuitive, such as clear navigation, visual hierarchy, and concise calls-to-action. The concept was defined around creating a clean, modern podcast web experience that showcases audio content, episode information, and key topics in a way that’s both easy to explore and visually appealing. The design direction balances simplicity with functionality to ensure users can find and listen to content with minimal friction.",
         imgResearch: { mobile: "../img/tp-res-m.jpg", desktop: "../img/tp-res-d.jpg" },
-        imgElementsOne: { mobile: "../img/tp-ui1-m.jpg", desktop: "../img/tp-ui1-d.jpg" },
-        imgElementsTwo: { mobile: "../img/tp-ui2-m.jpg", desktop: "../img/tp-ui2-d.jpg" },
-        imgElementsThree: { mobile: "../img/tp-ui3-m.jpg", desktop: "../img/tp-ui3-d.jpg" },
-        imgWireframesOne: { mobile: "../img/tp-w1-m.jpg", desktop: "../img/tp-w1-d.jpg" },
-        imgWireframesTwo: { mobile: "../img/tp-w2-m.jpg", desktop: "../img/tp-w2-d.jpg" },
-        stackDevelopment: "<b>Stack:</b> React, Node, etc",
-        textDevelopment: "Cómo desarrollaste TechPlus..."
+        imgElementsOne: { mobile: "../img/TechPlusTypographyCell.jpg", desktop: "../img/TechPlusTypography.jpg" },
+        imgElementsTwo: { mobile: "../img/techPlusColorsCell.jpg", desktop: "../img/techPlusColors.jpg" },
+        imgElementsThree: { mobile: "../img/TechPlusbuttonCell.jpg", desktop: "../img/TechPlusbutton.jpg" },
+        
+        imgWireframesOne: { mobile: "../img/TechPluswireframeDesktopCell.jpg", desktop: "../img/TechPluswireframeDesktop.jpg" },
+        imgWireframesTwo: { mobile: "../img/TechPluswireframeCell.jpg", desktop: "../img/TechPluswireframeCellDesktop.jpg" },
+        stackDevelopment: "<b>Stack:</b> HTML, CSS, JS",
+        textDevelopment: "For the development of Podcast Seven Pink, I built the front-end using HTML, CSS, and JavaScript to create a responsive and dynamic web experience. I translated the UI designs into clean, semantic HTML and modular CSS, ensuring layout consistency and accessibility. JavaScript was used to enhance interactivity and improve user engagement, while keeping performance smooth and lightweight. The result is a fast, responsive site that works seamlessly across desktop, tablet, and mobile devices, reflecting both solid UX/UI design and efficient front-end implementation."
     }
 };
 
@@ -97,7 +99,7 @@ document.addEventListener("DOMContentLoaded", () => {
         document.getElementById('textResearch').textContent = p.textResearch;
         document.getElementById('StackDeveloment').innerHTML = p.stackDevelopment;
         document.getElementById('textDeveloment').textContent = p.textDevelopment;
-        document.getElementById('  roleText').textContent = p.roleText;
+        document.getElementById('roleText').textContent = p.roleText;
 
         // 2. Imágenes simples
         document.getElementById('mockupTwo').src = p.mockupTwo;
