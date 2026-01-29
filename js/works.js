@@ -50,12 +50,12 @@ const works = {
         mockupThree: "../img/TechPlusbuttonCellPhone.jpg",
         titleOverview: "Overview",
         textOverview: "TechPlus is a UX/UI and front-end web project focused on creating a clean and intuitive platform for discovering and exploring podcast episodes. The project emphasizes clear content structure, visual hierarchy, and responsive design to make audio content easy to browse across all devices. The interface was designed to highlight episodes, topics, and calls-to-action while maintaining a modern and minimal aesthetic. Built using HTML, CSS, and JavaScript, the project reflects a user-centered approach that combines thoughtful UX decisions with efficient front-end development to deliver a smooth and accessible listening experience.",
-        overviewImg: { mobile: "../img/tp-ov-m.jpg", desktop: "../img/tp-ov-d.jpg" },
+        overviewImg: { mobile: "../img/OverviewTechPlusImagenCell.jpg", desktop: "../img/OverviewTechPlusImagen.jpg" },
 
         roleText: 'In this project, I was responsible for both the UX/UI design and front-end development, overseeing the process from initial concept to final implementation. I designed the user experience with a strong focus on usability, accessibility, and content clarity, ensuring that users can easily discover podcast episodes and navigate the platform without friction. On the UI side, I defined the visual direction, layout structure, typography, and visual hierarchy to create a clean and modern interface aligned with the project’s goals. I also translated the designs into a fully functional front-end using HTML, CSS, and JavaScript, maintaining design consistency across all screen sizes.',
 
         textResearch: "During the research phase, I analyzed popular podcast websites and platforms to understand how they structure content, highlight episodes, and engage listeners. I focused on usability patterns that make browsing episodes intuitive, such as clear navigation, visual hierarchy, and concise calls-to-action. The concept was defined around creating a clean, modern podcast web experience that showcases audio content, episode information, and key topics in a way that’s both easy to explore and visually appealing. The design direction balances simplicity with functionality to ensure users can find and listen to content with minimal friction.",
-        imgResearch: { mobile: "../img/tp-res-m.jpg", desktop: "../img/tp-res-d.jpg" },
+        imgResearch: { mobile: "../img/ResearchTechPlusCell.jpg", desktop: "../img/ResearchTechPlus.jpg" },
         imgElementsOne: { mobile: "../img/TechPlusTypographyCell.jpg", desktop: "../img/TechPlusTypography.jpg" },
         imgElementsTwo: { mobile: "../img/techPlusColorsCell.jpg", desktop: "../img/techPlusColors.jpg" },
         imgElementsThree: { mobile: "../img/TechPlusbuttonCell.jpg", desktop: "../img/TechPlusbutton.jpg" },

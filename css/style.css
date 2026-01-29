@@ -1,7 +1,26 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+/* variables */
+
+:root {
+  --bg-main: #100B16;
+  --purple-main: #7200FB;
+  --purple-border: #4B2870;
+
+  --text-main: #C3E2FF;
+  --text-title: #91BBE2;
+
+  --border-line: 2px solid var(--purple-border);
+  --radius-md: 10px;
+
+  --transition-fast: 0.3s ease;
+  --transition-smooth: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 @font-face {
     font-family: 'inter';
@@ -13,11 +32,12 @@
 html{
     scroll-behavior: smooth;
 }
+
 body{
-    background: #100B16;
-    /* overflow-x: hidden; */
-    font-family: 'inter', sans-serif;
-    overflow-x: hidden;
+     font-family: 'inter', sans-serif;
+  background: var(--bg-main);
+  color: var(--text-main);
+  overflow-x: hidden;
 }
 main{
     display: flex;
