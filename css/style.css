@@ -44,12 +44,18 @@ main{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-     margin: 0 1em;
-    border-left: 2px solid #4B2870;
-    border-right: 2px solid #4B2870;
+    margin: 0 1em;
+    border-left:  var(--border-line);
+    border-right: var(--border-line);
     height: 100%;
     overflow-x: hidden;
 }
+
+.u-border-left { border-left: var(--border-line); }
+.u-border-right { border-right: var(--border-line); }
+.u-border-top { border-top: var(--border-line); }
+.u-border-bottom { border-bottom: var(--border-line); }
+
 #canvas{
    position: fixed; /* Fijo para que no se mueva con el scroll a menos que nosotros queramos */
     z-index: -1;
@@ -68,28 +74,13 @@ main{
     top: 0;
     
 }
-.border-right{
-    border-right: 2px solid #4B2870;
-    height: 100%;
-    padding: 0 0 0 1em;
-}
 ul li {
     list-style: none;
 }
 ul li a{
     text-decoration: none;
 }
-.border-left{
-    border-left: 2px solid #4B2870;
-    padding: 0 1em 0 0;
-    height: 100%;
-}
-.border-bottom{
-    border-bottom: 2px solid #4B2870;
-}  
-.border-top{
-    border-top: 2px solid #4B2870;
-} 
+ 
 
 header,section{
     width: 100%;
@@ -231,6 +222,7 @@ h1{
  padding: 15px;
 
 }
+
 #box{
     height: 15vh;
 }
@@ -240,7 +232,7 @@ header .colorText{
     font-weight: 600;
 }
 
-.button-Border{
+#btn-content{
     display: flex;
     justify-content: center;
     align-items: center;    
@@ -333,20 +325,21 @@ footer h3{
         position: static;
         background-color: transparent;
         flex-direction: row;
-        height: auto;
+        height: 100%;
         grid-column: 2/3;
         padding: 0 1em;
         border: none;
-        height: 100%;
     }
    header #hamburgerContent ul {
         flex-direction: row;
         padding: 0;
         align-self: start;
         justify-self: start;
-        border-right: 2px solid #4B2870;
-        border-left: 2px solid #4B2870;
+        border-right: var(--border-line);
+        border-left: var(--border-line);
+        height: 100%;
     }
+
     #logo{
         height: 100%;
         font-size: 40px;
@@ -376,7 +369,7 @@ footer h3{
     }
   
     #work, #box{
-        border-right: 2px solid #4B2870;
+        border-right: var(--border-line);
     }
     #work{
         border-bottom: none;
@@ -400,7 +393,7 @@ footer h3{
         grid-column: 2/3;
         grid-row: 1/5;
         height: 100%;
-        border-left: 2px solid #4B2870;
+        border-left: var(--border-line);
     }
     #About p{
         grid-column: 1/2;
@@ -413,7 +406,7 @@ footer h3{
     #works{
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(5, auto);
-        border-bottom: #4B2870 2px solid;
+        border-bottom: var(--border-line);
     }
     #works .title, #Contact .title{
         grid-column: 1/4;
@@ -422,8 +415,8 @@ footer h3{
     #works .imgConteiner{
         grid-column: 2/3;
         grid-row: 2/6;
-        border-left: #4B2870 2px solid;
-        border-right: #4B2870 2px solid;
+        border-left: var(--border-line);
+        border-right: var(--border-line);
         border-bottom: none;
         height: 100%;
     }
@@ -444,12 +437,12 @@ footer h3{
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(4, auto);
         margin: 1em 0;
-        border-bottom: #4B2870 2px solid;
+        border-bottom: var(--border-line);
     }  
     #Contact .imgConteiner{
         grid-column: 1/2;
         grid-row: 2/5;
-        border-right: 2px solid #4B2870;
+        border-right: var(--border-line);
         height: 100%; 
         border-bottom: none;
     }
