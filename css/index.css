@@ -12,7 +12,6 @@ header .colorText{
         grid-column: 1/4;
         grid-row: 2/3;
         padding: 0;
-        font-size: 6rem ;
     }
 
      header .notMoviel{

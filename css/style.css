@@ -33,11 +33,13 @@ html{
     scroll-behavior: smooth;
 }
 
+ 
+
 body{
-     font-family: 'inter', sans-serif;
-  background: var(--bg-main);
+    font-family: 'inter', sans-serif;
   color: var(--text-main);
   overflow-x: hidden;
+  /* background: var(--bg-main); */
 }
 main{
     display: flex;
@@ -45,8 +47,7 @@ main{
     align-items: center;
     justify-content: center;
     margin: 0 1em;
-    border-left:  var(--border-line);
-    border-right: var(--border-line);
+    
     height: 100%;
     overflow-x: hidden;
 }
@@ -54,7 +55,17 @@ main{
 .u-border-left { border-left: var(--border-line); }
 .u-border-right { border-right: var(--border-line); }
 .u-border-top { border-top: var(--border-line); }
-.u-border-bottom { border-bottom: var(--border-line); }
+.u-border-bottom { border-bottom: var(--border-line) !important; }
+
+.u-background-dark{
+      background: var(--bg-main);
+ }
+
+ .text{
+    color: var(--text-main);
+    padding: 1em;
+    line-height: 1.5;
+ }
 
 #canvas{
    position: fixed; /* Fijo para que no se mueva con el scroll a menos que nosotros queramos */
@@ -62,10 +73,10 @@ main{
     pointer-events: none;
     /* Transición para que el movimiento se vea como una animación */
     transition: 
-        top 0.8s cubic-bezier(0.16, 1, 0.3, 1),
-        left 0.8s cubic-bezier(0.16, 1, 0.3, 1),
-        width 0.8s cubic-bezier(0.16, 1, 0.3, 1),
-        height 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+        top 0.8s var(--transition-smooth),
+        left 0.8s var(--transition-smooth),
+        width 0.8s var(--transition-smooth),
+        height 0.8s var(--transition-smooth),
         opacity 0.5s ease-in-out; /* Para el cambio de imagen suave */
     opacity: 1;
     width: 80vw;
@@ -102,7 +113,7 @@ header #hamburgerContent ul{
 #logo{
     font-size: 36px;
     font-weight: bold;
-    color: #C3E2FF;
+    color: var(--text-main);
     text-decoration: none;
     z-index: 2;
 
@@ -123,13 +134,9 @@ header #hamburgerContent ul{
 #burgerIcon .bar{
     height: 9px;
     width: 59px;
-    background: #7200FB;
+    background: var(--purple-main);
 }
-.colorText{
-    color: #C3E2FF;
-    padding: 1em;
-    line-height: 1.5;
-}
+
 header p{
     text-align: center;
 }
@@ -138,15 +145,6 @@ header p{
     display: none;
 }
       
-   
-
-/* .grid{ */
-/*     display: grid; */
-/*  */
-/* } */
-/* .gird-colum{ */
-/*     grid-template-columns: repeat(2, 1fr); */
-/* } */
 .flex{
     display: flex;
     flex-direction: row;
@@ -163,7 +161,6 @@ header p{
     right: -100%;
     width: 100%;
     height: 100vh;
-    background: #100B16;
     z-index: 1;
     display: flex;
     flex-direction: column;
@@ -204,22 +201,19 @@ header p{
     margin-top: 2em;
 }
 #languageSelect option{
-    background: #100B16;
-    color: #C3E2FF;
+    color: var(--text-main);
     border: none;
 }
-.TitleColor{
-    color: #91BBE2;
-    font-weight: 700;
-}
+
 h1, header p{
     text-align: center;
 }
 h1{
- font-size: 66px; 
- line-height: 1.3;
- grid-row: 2/3;
- padding: 15px;
+    font-size: clamp(3rem, 6vw, 5.5rem);
+    line-height: 1.2;; 
+    line-height: 1.3;
+    grid-row: 2/3;
+    padding: 15px;
 
 }
 
@@ -227,7 +221,7 @@ h1{
     height: 15vh;
 }
 
-header .colorText{
+header #work{
     font-size: 2em;
     font-weight: 600;
 }
@@ -240,9 +234,9 @@ header .colorText{
 
 .buttonPurple{
     margin: 1em;
-    background-color: #7200FB;
+    background-color: var(--purple-main);
     border: none;
-    color: #d3e2f0;
+    color: var(--text-main);
     font-family: 'inter', sans-serif;
     font-size: 1.5em;
     font-weight: 600;
@@ -255,8 +249,9 @@ header .colorText{
 
 .title{
     text-align: center;
-    font-size: 83px;
+    font-size: clamp(4rem, 8vw, 10rem);
     padding: 0.5em 0;
+    color: var(--text-title);
 }
 .imgConteiner{
     width: 100%;
@@ -264,8 +259,7 @@ header .colorText{
     overflow: hidden;
 }
 .imgConteiner, #box {
-    position: relative;
-    /* Asegúrate de que tengan un tamaño para que el canvas sepa a dónde ir */ 
+    position: relative; 
 }
 section p{
     font-size: 3vh;
@@ -299,7 +293,7 @@ section p{
 
 footer{
     width: 100%;
-    background: #C3E2FF;
+    background: var(--text-main);
     text-align: center;
 }
 footer h3{
@@ -313,6 +307,9 @@ footer h3{
         height: 100dvh;
         overflow-y: hidden;
     }
+    .u-border-right-Desktop{border-right: var(--border-line) !important;}
+    .u-border-left-Desktop{border-left: var(--border-line) !important;}
+    .u-border-bottom-Dsektop{border-bottom: var(--border-line);}
     #mainNav{
         height: 13vh;
         grid-column: 1/4;
@@ -335,9 +332,8 @@ footer h3{
         padding: 0;
         align-self: start;
         justify-self: start;
-        border-right: var(--border-line);
-        border-left: var(--border-line);
         height: 100%;
+      
     }
 
     #logo{
@@ -351,7 +347,7 @@ footer h3{
         font-size: 1.3em;
         width: auto;
         font-weight: normal;
-        border: none;
+          border-bottom: none !important;
     }
 
     #languageSelect{
@@ -368,11 +364,8 @@ footer h3{
         
     }
   
-    #work, #box{
-        border-right: var(--border-line);
-    }
     #work{
-        border-bottom: none;
+        border-bottom: none !important;
     }
     header .colorText{
         font-weight: normal;
@@ -393,7 +386,6 @@ footer h3{
         grid-column: 2/3;
         grid-row: 1/5;
         height: 100%;
-        border-left: var(--border-line);
     }
     #About p{
         grid-column: 1/2;
@@ -406,7 +398,6 @@ footer h3{
     #works{
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(5, auto);
-        border-bottom: var(--border-line);
     }
     #works .title, #Contact .title{
         grid-column: 1/4;
@@ -415,19 +406,16 @@ footer h3{
     #works .imgConteiner{
         grid-column: 2/3;
         grid-row: 2/6;
-        border-left: var(--border-line);
-        border-right: var(--border-line);
         border-bottom: none;
         height: 100%;
     }
     .project{
         grid-row: 2/5;
-        height: 100%;
+        height: 100vh;
         display: flex;
         flex-direction: column;
         align-items: stretch;
         justify-content: stretch;
-        padding: 2em 0;
     }
     .project li a{
         font-size: 2.5em;
@@ -437,14 +425,12 @@ footer h3{
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(4, auto);
         margin: 1em 0;
-        border-bottom: var(--border-line);
     }  
     #Contact .imgConteiner{
         grid-column: 1/2;
         grid-row: 2/5;
-        border-right: var(--border-line);
         height: 100%; 
-        border-bottom: none;
+        border-bottom: none !important;
     }
     #Contact .urlContact{
         grid-column: 2/3;
@@ -491,7 +477,7 @@ footer h3{
     height: 3px; /* Grosor de la línea */
     bottom: 0;
     left: 0;
-     background-color: #8A2BE2; /* Se aclara un poco el morado */
+     background-color: var(--purple-main); /* Se aclara un poco el morado */
     box-shadow: 0 0 20px rgba(114, 0, 251, 0.5);
     transition: width 0.4s ease-in-out; /* Velocidad de la animación */
 }
@@ -509,9 +495,7 @@ footer h3{
     position: relative; /* Necesario para contener el brillo */
     overflow: hidden;    /* Para que el brillo no se salga de los bordes */
     margin: 1em;
-    background-color: #7200FB;
     border: none;
-    color: #91BBE2;
     font-family: 'inter', sans-serif;
     font-size: 1.5em;
     font-weight: 600;
@@ -543,7 +527,7 @@ footer h3{
 /* Efectos al pasar el mouse */
 .buttonPurple:hover {
     transform: scale(1.05); /* El botón se hace un poco más grande */
-    background-color: #8A2BE2; /* Se aclara un poco el morado */
+    background-color: var(--purple-main); /* Se aclara un poco el morado */
     box-shadow: 0 0 20px rgba(114, 0, 251, 0.5); /* Crea un aura morada */
 }
 
