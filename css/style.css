@@ -406,8 +406,8 @@ footer h3{
     #works .imgConteiner{
         grid-column: 2/3;
         grid-row: 2/6;
-        border-bottom: none;
-        height: 100%;
+        border-bottom: none !important;
+        height: 68vh;
     }
     .project{
         grid-row: 2/5;
