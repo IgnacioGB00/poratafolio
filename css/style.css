@@ -55,7 +55,7 @@ main{
 .u-border-left { border-left: var(--border-line); }
 .u-border-right { border-right: var(--border-line); }
 .u-border-top { border-top: var(--border-line); }
-.u-border-bottom { border-bottom: var(--border-line) !important; }
+.u-border-bottom { border-bottom: var(--border-line) /* !important */; }
 
 .u-background-dark{
       background: var(--bg-main);
@@ -85,8 +85,15 @@ main{
     top: 0;
     
 }
+nav ul li {
+     width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
 ul li {
     list-style: none;
+   
 }
 ul li a{
     text-decoration: none;
@@ -193,12 +200,12 @@ header p{
 }
 
 #languageSelect{
-   
     padding: 0.5em;
     background: transparent;
     border: none;
     cursor: pointer;
-    margin-top: 2em;
+    font-size: 1.5rem;
+    height: 100%;
 }
 #languageSelect option{
     color: var(--text-main);
@@ -210,7 +217,6 @@ h1, header p{
 }
 h1{
     font-size: clamp(3rem, 6vw, 5.5rem);
-    line-height: 1.2;; 
     line-height: 1.3;
     grid-row: 2/3;
     padding: 15px;
@@ -238,13 +244,20 @@ header #work{
     border: none;
     color: var(--text-main);
     font-family: 'inter', sans-serif;
-    font-size: 1.5em;
+    font-size: clamp(1.5rem, 2vw, 1.8rem);
     font-weight: 600;
     justify-self: center;
     align-self: center;
     border-radius: 10px;
     padding: 0.5em 1.5em;
     cursor: pointer;
+    transition: 0.3s;
+    
+}
+
+.buttonPurple:hover {
+    box-shadow: 0 0 15px var(--purple-main);
+    transform: translateY(-2px);
 }
 
 .title{
@@ -302,32 +315,43 @@ footer h3{
     font-size: 3em;
 }
 
-@media(width >= 1200px){
-    header, section{
+ @media (width >= 1200px) {
+    header, section {
         height: 100dvh;
-        overflow-y: hidden;
+        overflow: hidden;
     }
-    .u-border-right-Desktop{border-right: var(--border-line) !important;}
-    .u-border-left-Desktop{border-left: var(--border-line) !important;}
-    .u-border-bottom-Dsektop{border-bottom: var(--border-line);}
-    #mainNav{
+
+
+    #mainNav {
+        grid-column: 1 / -1; /* Ocupa todo el ancho */
+        display: grid;
+        grid-template-columns: auto; /* Alineado con el header */
         height: 13vh;
-        grid-column: 1/4;
-        grid-row: 1/2;
     }
-    #burgerIcon{
+
+    #logo { align-self: center; 
+        justify-self: end; 
+        font-size: 40px; 
+        height: 100%;
+    }
+
+     #burgerIcon{
         display: none;
     }
-    #hamburgerContent{
+    #hamburgerContent {
         position: static;
+        flex-direction: row;
+        grid-column: 2 / 3;
+        border: none;
+        padding: 0 1em;
         background-color: transparent;
         flex-direction: row;
         height: 100%;
-        grid-column: 2/3;
-        padding: 0 1em;
-        border: none;
+        align-items: center;
+        justify-content: center;
     }
-   header #hamburgerContent ul {
+     
+     header #hamburgerContent ul {
         flex-direction: row;
         padding: 0;
         align-self: start;
@@ -335,210 +359,98 @@ footer h3{
         height: 100%;
       
     }
-
-    #logo{
-        height: 100%;
-        font-size: 40px;
-        align-self: center;
-        justify-self: end;
-        
-    }
     #hamburgerContent ul li a{
         font-size: 1.3em;
         width: auto;
         font-weight: normal;
-          border-bottom: none !important;
+          border-bottom: none;
     }
 
-    #languageSelect{
-        margin-top: 0;
-        font-size: 1.3em;
-        border: none;
-    }
   
-    #box{
-        grid-column: 1/2;
-        grid-row: 3/4;
-        height: 100%;
-        width: 100%;
-        
-    }
-  
-    #work{
-        border-bottom: none !important;
-    }
-    header .colorText{
-        font-weight: normal;
-        text-align: left;
 
-    }
-   
-    #About{
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(4, 1fr);
-    }
-    #About .title{
-        grid-column: 1/2;
-        grid-row: 1/2;
-        
-    }
-    #About .imgConteiner{
-        grid-column: 2/3;
-        grid-row: 1/5;
-        height: 100%;
-    }
-    #About p{
-        grid-column: 1/2;
-    }
-    section .title{
-        font-size: 10rem;
-        padding: 0;
+    /* 2. ABOUT: Usando Áreas para mayor claridad */
+    #About {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto 1fr;
+        grid-template-areas: 
+            "title img"
+            "tools img"
+            "skills img"
+            "desc img";
     }
 
-    #works{
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(5, auto);
-    }
-    #works .title, #Contact .title{
-        grid-column: 1/4;
-        grid-row: 1/2;
-    }
-    #works .imgConteiner{
-        grid-column: 2/3;
-        grid-row: 2/6;
-        border-bottom: none !important;
-        height: 68vh;
-    }
-    .project{
-        grid-row: 2/5;
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        align-items: stretch;
-        justify-content: stretch;
-    }
-    .project li a{
-        font-size: 2.5em;
+    #About .title { grid-area: title; }
+    #About .imgConteiner { grid-area: img; height: 100%; }
+    #About p:nth-of-type(1) { grid-area: tools; }
+    #About p:nth-of-type(2) { grid-area: skills; }
+    #About p:nth-of-type(3) { grid-area: desc; }
+
+    /* 3. WORKS: 3 columnas claras */
+    #works {
+        display: grid;
+        grid-template-columns: 1fr 1.2fr 1fr;
+        grid-template-rows: auto 1fr;
     }
 
-    #Contact{
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(4, auto);
-        margin: 1em 0;
-    }  
-    #Contact .imgConteiner{
-        grid-column: 1/2;
-        grid-row: 2/5;
-        height: 100%; 
-        border-bottom: none !important;
-    }
-    #Contact .urlContact{
-        grid-column: 2/3;
-        grid-row: 2/5;
-        align-self: stretch;
-        justify-self: stretch;
-    }
-     #Contact .urlContact li a{
-        font-size: 2.5em;
-        text-align: right;
-     }
-     #email{
-        border-bottom: none;
-     }
-
-     footer {
-        height: 58vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-     }  
-     #canvas{
-        width: 20vw;
-        height: 50vh;
-     } 
-     /* Estilo base para los enlaces que tendrán la animación */ 
-/* Estilo base para los enlaces que tendrán la animación */
-.project li a, 
-.urlContact li a, 
-#hamburgerContent ul li a {
-    position: relative;
-    text-decoration: none;
-    /* display: inline-block */; /* Necesario para que la línea mida lo mismo que el texto */
-    /* padding-bottom: 5px;  */  /* Espacio para la línea */
-}
-
-/* Creamos la línea invisible al inicio */
-.project li a::after, 
-.urlContact li a::after, 
-#hamburgerContent ul li a::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 3px; /* Grosor de la línea */
-    bottom: 0;
-    left: 0;
-     background-color: var(--purple-main); /* Se aclara un poco el morado */
-    box-shadow: 0 0 20px rgba(114, 0, 251, 0.5);
-    transition: width 0.4s ease-in-out; /* Velocidad de la animación */
-}
-
-/* Animación al pasar el mouse: la línea crece al 100% */
-.project li a:hover::after, 
-.urlContact li a:hover::after, 
-#hamburgerContent ul li a:hover::after {
-    width: 100%;
-}
-
-/* Opcional: Si quieres quitar los bordes inferiores que tenías en el HTML */
- 
-.buttonPurple {
-    position: relative; /* Necesario para contener el brillo */
-    overflow: hidden;    /* Para que el brillo no se salga de los bordes */
-    margin: 1em;
-    border: none;
-    font-family: 'inter', sans-serif;
-    font-size: 1.5em;
-    font-weight: 600;
-    border-radius: 10px;
-    padding: 0.5em 1.5em;
-    cursor: pointer;
+    #works .title { grid-column: 1 / -1; }
     
-    /* Animación de escala suave */
-    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), background-color 0.3s ease;
-}
+    #works .imgConteiner {
+        grid-column: 2 / 3;
+        grid-row: 2;
+        height: 60vh; /* Ajustado para que respire */
+        align-self: center;
+        border-bottom: none;
+    }
 
-/* El brillo que recorre el botón */
-.buttonPurple::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%; /* Empieza fuera del botón a la izquierda */
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(
-        120deg,
-        transparent,
-        rgba(255, 255, 255, 0.3), /* El color del brillo */
-        transparent
-    );
-    transition: all 0.6s;
-}
+    .project {
+        grid-row: 2;
+        flex-direction: column;
+        justify-content: center;
+    }
 
-/* Efectos al pasar el mouse */
-.buttonPurple:hover {
-    transform: scale(1.05); /* El botón se hace un poco más grande */
-    background-color: var(--purple-main); /* Se aclara un poco el morado */
-    box-shadow: 0 0 20px rgba(114, 0, 251, 0.5); /* Crea un aura morada */
-}
+    /* 4. CONTACT: 2 columnas */
+    #Contact {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            "title title"
+            "img links";
+    }
 
-/* Cuando haces hover, el brillo cruza a toda velocidad */
-.buttonPurple:hover::before {
-    left: 100%;
-}
+    #Contact .title { grid-area: title; }
+    #Contact .imgConteiner { grid-area: img; height: 100%; }
+    #Contact .urlContact { 
+        grid-area: links; 
+        display: flex; 
+        flex-direction: column; 
+        justify-content: center; 
+    }
 
-/* Efecto al hacer clic (Presión) */
-.buttonPurple:active {
-    transform: scale(0.95); /* Se encoge un poco al presionarlo */
-}
+    /* Limpieza de bordes duplicados en Desktop */
+    .u-border-right-Desktop { border-right: var(--border-line); }
+    .u-border-left-Desktop { border-left: var(--border-line); }
+    .u-border-bottom-Dsektop { border-bottom: var(--border-line); }
+    
+    #email, #work, #hamburgerContent ul li a { border-bottom: none; }
 
+    /* Estilos de animación agrupados (Ya optimizado) */
+    .project li a, .urlContact li a, #hamburgerContent ul li a {
+        position: relative;
+    }
+
+    .project li a::after, .urlContact li a::after, #hamburgerContent ul li a::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 3px;
+        background-color: var(--purple-main);
+        transition: width 0.4s ease;
+    }
+
+    .project li a:hover::after, .urlContact li a:hover::after, #hamburgerContent ul li a:hover::after {
+        width: 100%;
+    }
 }

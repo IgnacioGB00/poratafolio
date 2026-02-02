@@ -1,3 +1,6 @@
+header .text{
+        font-size: 3vh
+}
 picture{
     display: flex;
     align-items: center;
@@ -50,8 +53,15 @@ header .colorText{
          grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(6, 1fr);
     }
+    header picture{
+        border-bottom: none !important;
+    }
+    .text{
+        text-align: left;
+    }
     section .title{
         height: 26vh;
+        padding: 18px;
     }
    #nameProject{
         grid-row: 2/3;
@@ -77,11 +87,8 @@ header .colorText{
         display: block;
         padding: 1em;
         height: 100%;
-        border-right: 2px solid #4B2870 !important;
     }
-    picture, .button-Border, #rol, #stack, #explanation {
-        border-left: 2px solid #4B2870 !important;
-    } 
+    
     picture{
         grid-column: 2/3;
         grid-row: 3/7;
@@ -93,7 +100,7 @@ header .colorText{
         
     }
     #Overview picture, header picture{
-        border: none !important;
+        border: none ;
     }
     picture img{
         height: 100%;
@@ -104,7 +111,7 @@ header .colorText{
     #explanation{
         grid-row: 2/4;
         grid-column: 3/4;
-        height:46vh;
+        height: 50vh;
     }
     #rol{
         grid-column: 3/4;
@@ -121,7 +128,7 @@ header .colorText{
     }
 
     #Overview{
-        grid-template-columns: repeat(2, auto) !important;
+        grid-template-columns: repeat(2, auto);
         grid-template-rows: 26% 74% ;
     }
 
@@ -132,12 +139,7 @@ header .colorText{
   #Overview picture{
     grid-row: 2/3;
     height: 100%;
-     border-left: 2px solid #4B2870 !important;
   }
-
-  section .title{
-        height: 26vh;
-    }
 
     #Overview p{
         border-bottom: none;
@@ -153,7 +155,7 @@ header .colorText{
     }
 
     #Process{
-        grid-template-columns: 40% 60% !important;
+        grid-template-columns: 40% 60% ;
     } 
 
     #Process h2{
@@ -176,7 +178,6 @@ header .colorText{
         grid-column: 2/3;
         grid-row: 3/4;
         width: 100%;
-        border-left:  2px solid #4B2870 !important;
     }
     #ImgResearch img{
         height: 74vh;
@@ -184,7 +185,6 @@ header .colorText{
     #UIElements{
         grid-column: 2/3;
         grid-row: 4/5;
-        border-left:  2px solid #4B2870 !important;
     }
 
     #imgElementsOne{
@@ -220,6 +220,7 @@ header .colorText{
         grid-row: 7/9;
         height: 90vh;
         width: 100%;
+        border-bottom: none;
     }
     #imgWireframesTwo{
         grid-column: 1/2;
@@ -230,7 +231,7 @@ header .colorText{
         display: grid;
         grid-template-columns: 50% 50%;
         grid-template-rows: repeat(3, auto);
-        height: auto !important;
+        height: auto ;
     }
 
      #Development h2{
@@ -244,7 +245,6 @@ header .colorText{
 
      #textDeveloment{
         grid-row: 2/4;
-        border-left: #4B2870 solid 2px;
      }
      h3{
         overflow-wrap: break-word;
