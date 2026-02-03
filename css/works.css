@@ -138,7 +138,7 @@ header .colorText{
 
   #Overview picture{
     grid-row: 2/3;
-    height: 100%;
+    height: 74vh;
   }
 
     #Overview p{

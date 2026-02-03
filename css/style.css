@@ -294,7 +294,7 @@ section p{
 }
 
 .urlContact li a{
-    font-size: 2.5em;
+    font-size: 2.2em;
     font-weight: 600;
     width: 100%;
     text-align: center;
@@ -316,7 +316,7 @@ footer h3{
 }
 
  @media (width >= 1200px) {
-    header, section {
+    header{
         height: 100dvh;
         overflow: hidden;
     }
@@ -401,6 +401,7 @@ footer h3{
         height: 60vh; /* Ajustado para que respire */
         align-self: center;
         border-bottom: none;
+       /*  width: 20vw; */
     }
 
     .project {
