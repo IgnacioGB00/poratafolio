@@ -22,8 +22,8 @@ picture img{
 .buttonPurpleBorder{
       margin: 1em;
     background-color: transparent;
-    border: 2px solid #7200FB;
-    color: #d3e2f0;
+    border: 2px solid var(--purple-main);
+    color:var( --text-main);
     font-family: 'inter', sans-serif;
     font-size: 1.5em;
     font-weight: 600;
@@ -252,5 +252,9 @@ header .colorText{
 
      header .colorText{
     font-size: 1.5em;
+    }
+    .buttonPurpleBorder:hover {
+    background-color: var(--purple-main);
+    transition: 0.3s ease; /* Para que el cambio no sea brusco */
 }
 }

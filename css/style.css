@@ -271,6 +271,16 @@ header #work{
     height: 500px;
     overflow: hidden;
 }
+
+.fade-in-img {
+    opacity: 0;
+    transition: opacity 0.5s ease; /* Aquí controlas la velocidad */
+}
+
+/* Clase que activaremos con JS */
+.fade-in-img.visible {
+    opacity: 1;
+}
 .imgConteiner, #box {
     position: relative; 
 }
@@ -420,7 +430,11 @@ footer h3{
     }
 
     #Contact .title { grid-area: title; }
-    #Contact .imgConteiner { grid-area: img; height: 100%; }
+    #Contact .imgConteiner { 
+        grid-area: img; 
+        height: 100%; 
+        border-bottom: none;
+    }
     #Contact .urlContact { 
         grid-area: links; 
         display: flex; 
