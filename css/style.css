@@ -115,10 +115,8 @@ header #hamburgerContent ul{
     color: var(--text-main);
     text-decoration: none;
     z-index: 2;
+    height: 100%;
 
-}
-#logo, #mainNav{
-     height: 10vh;
 }
 #burgerIcon{
     display: flex;
