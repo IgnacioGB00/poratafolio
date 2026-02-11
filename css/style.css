@@ -108,6 +108,7 @@ header #hamburgerContent ul{
 #mainNav{
     grid-row: 1/2;
     display: grid;
+    height: 13vh;
 }
 #logo{
     font-size: 36px;
