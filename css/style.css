@@ -423,6 +423,7 @@ footer h3{
     .u-border-right-Desktop { border-right: var(--border-line); }
     .u-border-left-Desktop { border-left: var(--border-line); }
     .u-border-bottom-Dsektop { border-bottom: var(--border-line); }
+    .u-border-top-Desktop { border-top: var(--border-line); }
     
     #email, #work, #hamburgerContent ul li a { border-bottom: none; }
 
