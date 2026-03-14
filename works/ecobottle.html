@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecobottle — Ignacio Gómez</title>
+    <meta name="description" content="Ecobottle is a comprehensive web experience designed to promote sustainability through immersive 3D animations and intuitive user flows.">
+
+    <link rel="preload" as="image" href="../img/mockupDesktoEcoBottle.avif" type="image/avif" media="(max-width: 949px)">
+    <link rel="preload" as="image" href="../img/mockupDesktoEcoBottle.avif" type="image/avif" media="(min-width: 950px)">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/works.css">
+    <script src="../js/translation.js" defer></script>
+</head>
+<body class="u-background-dark">
+    <main class="u-border-left u-border-right">
+        <header class="grid grid-colum" id="headWork">
+            <nav id="mainNav" class="flex u-border-bottom">
+                <a href="../index.html" class="u-border-right" id="logo"> IG</a>
+                <input title="BurgerMenu" type="checkbox" id="BurgerMenu">
+                <label id="burgerIcon" for="BurgerMenu" class="u-border-left">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </label>
+                <nav id="hamburgerContent" class="u-border-top u-border-left u-background-dark">
+                    <ul class="border-left">
+                        <li class="u-border-left-Desktop"><a href="../index.html#About" data-key="nav-about" class="text u-border-bottom">About</a></li>
+                        <li><a href="../index.html#works" data-key="nav-works" class="text u-border-bottom">Works</a></li>
+                        <li class="u-border-right-Desktop"><a href="../index.html#Contact" data-key="nav-contact" class="text u-border-bottom">Contacts</a></li>
+                    </ul>
+                    <select name="language" id="languageSelect" class="text">
+                        <option value="en" class="u-background-dark">EN</option>
+                        <option value="es" class="u-background-dark">ES</option>
+                    </select>
+                </nav>
+            </nav>
+
+            <h1 class="TitleColor u-border-bottom u-border-right-Desktop" id="nameProject"
+                data-en="Ecobottle"
+                data-es="Ecobottle">Ecobottle</h1>
+
+            <picture id="imgHeader" class="u-border-bottom u-border-left-Desktop u-border-right-Desktop">
+                <source srcset="../img/mockupDesktoEcoBottle.avif" media="(max-width: 949px)" />
+                <source srcset="../img/mockupDesktoEcoBottle.avif" media="(min-width: 950px)" />
+                <img src="../img/mockupDesktoEcoBottle.avif" alt="cellPhone mockup" width="900" height="400" fetchpriority="high">
+            </picture>
+
+            <img src="../img/mockupmobileEcobottle.avif" alt="#" id="mockupTwo" class="u-border-bottom" width="900" height="400" loading="lazy">
+            <img src="../img/mockupTabletEcobottle.avif" alt="#" id="mockupThree" width="900" height="400" loading="lazy">
+
+            <p class="text u-border-bottom" id="explanation"
+                data-en="Ecobottle is a comprehensive web experience designed to promote sustainability through immersive 3D animations and intuitive user flows. The project focuses on bridging the gap between recycled products and digital storytelling."
+                data-es="Ecobottle es una experiencia web integral diseñada para promover la sostenibilidad mediante animaciones 3D inmersivas y flujos de usuario intuitivos. El proyecto se enfoca en cerrar la brecha entre los productos reciclados y el storytelling digital."></p>
+            <p id="rol" class="text u-border-bottom u-border-top-Desktop"
+                data-en="<b>Rol:</b> Web Designer and Front-End Developer"
+                data-es="<b>Rol:</b> Diseñador Web y Desarrollador Front-End"><b>Rol:</b> Web Designer and Front-End Developer</p>
+            <p id="stack" class="text u-border-bottom"
+                data-en="<b>Stack:</b> HTML, CSS, JS"
+                data-es="<b>Stack:</b> HTML, CSS, JS"><b>Stack:</b> HTML, CSS, JS</p>
+            <div id="btn-content">
+                <button class="buttonPurple" onclick="window.open('https://ecobottle.vercel.app/', '_blank')">View Live Website</button>
+            </div>
+        </header>
+
+        <section id="Overview" class="u-border-top">
+            <h2 class="title TitleColor u-border-bottom" id="titleOverview"
+                data-en="Overview"
+                data-es="Resumen">Overview</h2>
+            <p class="text u-border-bottom u-border-right-Desktop" id="textOverview"
+                data-en="Ecobottle is an interactive digital experience designed to transform how users perceive recycled products. By blending immersive 3D animations with a clean, functional interface, the project aims to turn sustainability into a compelling visual narrative. The focus was on creating a seamless user journey that balances aesthetic high-impact elements with optimized performance, ensuring the message of environmental consciousness is accessible across all platforms."
+                data-es="Ecobottle es una experiencia digital interactiva diseñada para transformar la percepción de los productos reciclados. Al combinar animaciones 3D inmersivas con una interfaz limpia y funcional, el proyecto busca convertir la sostenibilidad en una narrativa visual atractiva. El enfoque principal fue crear un recorrido de usuario fluido que equilibre elementos estéticos de alto impacto con un rendimiento optimizado, garantizando que el mensaje de conciencia ambiental sea accesible en todas las plataformas."></p>
+            <picture id="Overview">
+                <source id="OverviewCellImg" srcset="../img/ecoBottleDesktop.avif" media="(max-width: 949px)" />
+                <source id="OverviewDesktopImg" srcset="../img/ecoBottleDesktop.avif" media="(min-width: 950px)" />
+                <img src="../img/ecoBottleDesktop.avif" id="imgOverview" alt="image of the wireframer" loading="lazy" width="1200" height="675">
+            </picture>
+        </section>
+
+        <section id="MyRole" class="u-border-top">
+            <h2 class="title TitleColor u-border-bottom">My Role</h2>
+            <p class="text colorText" id="roleText"
+                data-en="As the Web Designer and Front-End Developer for this project, I was responsible for the entire digital lifecycle—from initial wireframing and UI design to the final code implementation. My focus was on creating a high-performance interactive experience, developing custom 3D animations with HTML Canvas, and ensuring a fully responsive layout that maintains visual integrity across all devices."
+                data-es="Como Diseñador Web y Desarrollador Front-End de este proyecto, fui responsable de todo el ciclo de vida digital, desde el wireframing inicial y el diseño de interfaz (UI) hasta la implementación final del código. Mi enfoque principal fue crear una experiencia interactiva de alto rendimiento, desarrollando animaciones 3D personalizadas con HTML Canvas y asegurando un diseño totalmente responsivo que mantiene su integridad visual en cualquier dispositivo."></p>
+        </section>
+
+        <section id="Process" class="u-border-top">
+            <h2 class="title TitleColor u-border-bottom">Process</h2>
+            <h3 class="subTitle TitleColor u-border-bottom" id="Research">Research & Concept</h3>
+            <p class="text u-border-bottom" id="textResearch"
+                data-en="The project began with an in-depth analysis of sustainable digital trends and user behavior within the eco-friendly market. The research focused on how to present recycled products in a way that feels premium and modern rather than purely functional. This led to a concept centered on 'Dynamic Sustainability': using fluid 3D animations and a minimalist color palette to create an immersive narrative that guides the user from product discovery to environmental impact awareness."
+                data-es="El proyecto comenzó con un análisis profundo de las tendencias digitales sostenibles y el comportamiento de los usuarios dentro del mercado ecológico. La investigación se centró en cómo presentar productos reciclados de una manera que se perciba como moderna y de alta calidad, más allá de lo puramente funcional. Esto dio lugar a un concepto basado en la 'Sostenibilidad Dinámica': el uso de animaciones 3D fluidas y una paleta de colores minimalista para crear una narrativa inmersiva que guía al usuario desde el descubrimiento del producto hasta la conciencia de su impacto ambiental."></p>
+            <picture class="u-border-bottom u-border-left-Desktop" id="ImgResearch">
+                <source srcset="../img/ecobottl.avif" media="(max-width: 949px)" />
+                <source srcset="../img/ecobottl.avif" media="(min-width: 950px)" />
+                <img src="../img/ecobottl.avif" alt="image of the wireframer" loading="lazy" width="1200" height="675">
+            </picture>
+
+            <h3 class="subTitle TitleColor u-border-bottom" id="UIElements">UI Elements</h3>
+            <picture class="u-border-bottom u-border-right-Desktop" id="imgElementsOne">
+                <source srcset="../img/ecobottleSpacing.avif" media="(max-width: 949px)" />
+                <source srcset="../img/ecobottleSpacing.avif" media="(min-width: 950px)" />
+                <img src="../img/ecobottleSpacing.avif" alt="image of the wireframer" loading="lazy" width="1200" height="675">
+            </picture>
+            <picture class="u-border-bottom" id="imgElementsTwo">
+                <source srcset="../img/ecobottleColors.avif" media="(max-width: 949px)" />
+                <source srcset="../img/ecobottleColors.avif" media="(min-width: 950px)" />
+                <img src="../img/ecobottleColors.avif" alt="image of the wireframer" loading="lazy" width="1200" height="675">
+            </picture>
+            <picture class="u-border-bottom" id="imgElementsThree">
+                <source srcset="../img/ecobottleComponet.avif" media="(max-width: 949px)" />
+                <source srcset="../img/ecobottleComponet.avif" media="(min-width: 950px)" />
+                <img src="../img/ecobottleComponet.avif" alt="image of the wireframer" loading="lazy" width="1200" height="675">
+            </picture>
+
+            <h3 class="subTitle TitleColor u-border-bottom" id="Wireframes">Wireframes</h3>
+            <picture class="u-border-bottom u-border-left-Desktop" id="imgWireframesOne">
+                <source srcset="../img/ecobottleWireframer.avif" media="(max-width: 949px)" />
+                <source srcset="../img/ecobottleWireframer.avif" media="(min-width: 950px)" />
+                <img src="../img/ecobottleWireframer.avif" alt="image of the wireframer" loading="lazy" width="1200" height="675">
+            </picture>
+            <picture id="imgWireframesTwo">
+                <source srcset="../img/ecobottleWireframerMobile.avif" media="(max-width: 949px)" />
+                <source srcset="../img/ecobottleWireframerMobile.avif" media="(min-width: 950px)" />
+                <img src="../img/ecobottleWireframerMobile.avif" alt="image of the wireframer" loading="lazy" width="1200" height="675">
+            </picture>
+        </section>
+
+        <section id="Development" class="u-border-top">
+            <h2 class="title TitleColor u-border-bottom">Development</h2>
+            <p class="text u-border-bottom" id="StackDeveloment"
+                data-en="<b>Stack:</b> HTML, CSS, JS"
+                data-es="<b>Stack:</b> HTML, CSS, JS"><b>Stack:</b> HTML, CSS, JS</p>
+            <p class="text u-border-bottom u-border-left-Desktop" id="textDeveloment"
+                data-en="The development phase focused on building a high-performance, interactive architecture using modern web standards. The core of the experience is powered by custom HTML5 Canvas animations and JavaScript (ES6+), creating a seamless 3D product showcase. I implemented advanced CSS techniques like Flexbox and Grid for a fully responsive layout, while ensuring the code was optimized for fast loading times and SEO. The project is hosted on Vercel, leveraging its continuous deployment workflow to maintain a robust and scalable digital environment."
+                data-es="La fase de desarrollo se centró en construir una arquitectura interactiva de alto rendimiento utilizando estándares web modernos. El núcleo de la experiencia está impulsado por animaciones personalizadas en HTML5 Canvas y JavaScript (ES6+), creando una exhibición de productos en 3D fluida. Implementé técnicas avanzadas de CSS como Flexbox y Grid para un diseño totalmente responsivo, asegurando al mismo tiempo que el código estuviera optimizado para tiempos de carga rápidos y SEO. El proyecto está alojado en Vercel, aprovechando su flujo de trabajo de despliegue continuo para mantener un entorno digital robusto y escalable."></p>
+            <div id="buttonDeveloment">
+                <button class="buttonPurple border-bottom" onclick="window.open('https://ecobottle.vercel.app/', '_blank')">View Live Website</button>
+                <button class="buttonPurpleBorder border-bottom" onclick="window.open('https://github.com/IgnacioGB00/Ecobottle', '_blank')">View Source Code</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <h3>Ignacio 2025</h3>
+    </footer>
+</body>
+</html>

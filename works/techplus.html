@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechPlus — Ignacio Gómez</title>
+    <meta name="description" content="TechPlus is a modern podcast platform focused on clarity, accessibility, and user experience.">
+
+    <link rel="preload" as="image" href="../img/TechPlusLabtop.jpg" media="(max-width: 949px)">
+    <link rel="preload" as="image" href="../img/TechPlusLabtopCell.jpg" media="(min-width: 950px)">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/works.css">
+    <script src="../js/translation.js" defer></script>
+</head>
+<body class="u-background-dark">
+    <main class="u-border-left u-border-right">
+        <header class="grid grid-colum" id="headWork">
+            <nav id="mainNav" class="flex u-border-bottom">
+                <a href="../index.html" class="u-border-right" id="logo"> IG</a>
+                <input title="BurgerMenu" type="checkbox" id="BurgerMenu">
+                <label id="burgerIcon" for="BurgerMenu" class="u-border-left">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </label>
+                <nav id="hamburgerContent" class="u-border-top u-border-left u-background-dark">
+                    <ul class="border-left">
+                        <li class="u-border-left-Desktop"><a href="../index.html#About" data-key="nav-about" class="text u-border-bottom">About</a></li>
+                        <li><a href="../index.html#works" data-key="nav-works" class="text u-border-bottom">Works</a></li>
+                        <li class="u-border-right-Desktop"><a href="../index.html#Contact" data-key="nav-contact" class="text u-border-bottom">Contacts</a></li>
+                    </ul>
+                    <select name="language" id="languageSelect" class="text">
+                        <option value="en" class="u-background-dark">EN</option>
+                        <option value="es" class="u-background-dark">ES</option>
+                    </select>
+                </nav>
+            </nav>
+
+            <h1 class="TitleColor u-border-bottom u-border-right-Desktop" id="nameProject"
+                data-en="TechPlus"
+                data-es="TechPlus">TechPlus</h1>
+
+            <picture id="imgHeader" class="u-border-bottom u-border-left-Desktop u-border-right-Desktop">
+                <source srcset="../img/TechPlusLabtop.jpg" media="(max-width: 949px)" />
+                <source srcset="../img/TechPlusLabtopCell.jpg" media="(min-width: 950px)" />
+                <img src="../img/TechPlusLabtopCell.jpg" alt="cellPhone mockup" width="900" height="400" fetchpriority="high">
+            </picture>
+
+            <img src="../img/TechPlusTablet.jpg" alt="#" id="mockupTwo" class="u-border-bottom" width="900" height="400" loading="lazy">
+            <img src="../img/TechPlusbuttonCellPhone.jpg" alt="#" id="mockupThree" width="900" height="400" loading="lazy">
+
+            <p class="text u-border-bottom" id="explanation"
+                data-en="TechPlus is a modern podcast platform focused on clarity, accessibility, and user experience. The project is designed to help users discover, explore, and engage with audio content through a clean interface, strong visual hierarchy, and responsive layouts that work seamlessly across devices."
+                data-es="TechPlus es una plataforma de podcast moderna centrada en la claridad, la accesibilidad y la experiencia del usuario. El proyecto está diseñado para ayudar a los usuarios a descubrir y participar con contenido de audio a través de una interfaz limpia y diseños responsivos."></p>
+            <p id="rol" class="text u-border-bottom u-border-top-Desktop"
+                data-en="<b>Rol:</b> Web Designer and Front-End Developer"
+                data-es="<b>Rol:</b> Diseñador Web y Desarrollador Front-End"><b>Rol:</b> Web Designer and Front-End Developer</p>
+            <p id="stack" class="text u-border-bottom"
+                data-en="<b>Stack:</b> HTML, CSS, JS"
+                data-es="<b>Stack:</b> HTML, CSS, JS"><b>Stack:</b> HTML, CSS, JS</p>
+            <div id="btn-content">
+                <button class="buttonPurple" onclick="window.open('https://podcast-seven-pink.vercel.app/', '_blank')">View Live Website</button>
+            </div>
+        </header>
+
+        <section id="Overview" class="u-border-top">
+            <h2 class="title TitleColor u-border-bottom" id="titleOverview"
+                data-en="Overview"
+                data-es="Resumen">Overview</h2>
+            <p class="text u-border-bottom u-border-right-Desktop" id="textOverview"
+                data-en="TechPlus is a UX/UI and front-end web project focused on creating a clean and intuitive platform for discovering and exploring podcast episodes. The project emphasizes clear content structure, visual hierarchy, and responsive design to make audio content easy to browse across all devices. The interface was designed to highlight episodes, topics, and calls-to-action while maintaining a modern and minimal aesthetic. Built using HTML, CSS, and JavaScript, the project reflects a user-centered approach that combines thoughtful UX decisions with efficient front-end development to deliver a smooth and accessible listening experience."
+                data-es="TechPlus es un proyecto web de UX/UI y front-end centrado en crear una plataforma limpia e intuitiva para descubrir episodios de podcast. El proyecto enfatiza una estructura de contenido clara y un diseño responsivo para facilitar la navegación en todos los dispositivos. La interfaz fue diseñada para resaltar episodios y temas manteniendo una estética mínima y moderna."></p>
+            <picture id="Overview">
+                <source id="OverviewCellImg" srcset="../img/OverviewTechPlusImagenCell.jpg" media="(max-width: 949px)" />
+                <source id="OverviewDesktopImg" srcset="../img/OverviewTechPlusImagen.jpg" media="(min-width: 950px)" />
+                <img src="../img/OverviewTechPlusImagen.jpg" id="imgOverview" alt="image of the wireframer" loading="lazy" width="1200" height="675">
+            </picture>
+        </section>
+
+        <section id="MyRole" class="u-border-top">
+            <h2 class="title TitleColor u-border-bottom">My Role</h2>
+            <p class="text colorText" id="roleText"
+                data-en="In this project, I was responsible for both the UX/UI design and front-end development, overseeing the process from initial concept to final implementation. I designed the user experience with a strong focus on usability, accessibility, and content clarity, ensuring that users can easily discover podcast episodes and navigate the platform without friction. On the UI side, I defined the visual direction, layout structure, typography, and visual hierarchy to create a clean and modern interface aligned with the project's goals. I also translated the designs into a fully functional front-end using HTML, CSS, and JavaScript, maintaining design consistency across all screen sizes."
+                data-es="En este proyecto, fui responsable tanto del diseño UX/UI como del desarrollo front-end. Diseñé la experiencia de usuario con un fuerte enfoque en la usabilidad y la claridad del contenido. En el lado de la UI, definí la dirección visual y la jerarquía para crear una interfaz moderna. También traduje los diseños a un front-end funcional utilizando HTML, CSS y JavaScript."></p>
+        </section>
+
+        <section id="Process" class="u-border-top">
+            <h2 class="title TitleColor u-border-bottom">Process</h2>
+            <h3 class="subTitle TitleColor u-border-bottom" id="Research">Research & Concept</h3>
+            <p class="text u-border-bottom" id="textResearch"
+                data-en="During the research phase, I analyzed popular podcast websites and platforms to understand how they structure content, highlight episodes, and engage listeners. I focused on usability patterns that make browsing episodes intuitive, such as clear navigation, visual hierarchy, and concise calls-to-action. The concept was defined around creating a clean, modern podcast web experience that showcases audio content, episode information, and key topics in a way that's both easy to explore and visually appealing. The design direction balances simplicity with functionality to ensure users can find and listen to content with minimal friction."
+                data-es="Durante la fase de investigación, analicé plataformas de podcast populares para entender cómo estructuran el contenido. Me enfoqué en patrones de usabilidad que hacen que la navegación sea intuitiva. El concepto se definió en torno a una experiencia web moderna que muestra información de episodios de manera visualmente atractiva."></p>
+            <picture class="u-border-bottom u-border-left-Desktop" id="ImgResearch">
+                <source srcset="../img/ResearchTechPlusCell.jpg" media="(max-width: 949px)" />
+                <source srcset="../img/ResearchTechPlus.jpg" media="(min-width: 950px)" />
+                <img src="../img/ResearchTechPlus.jpg" alt="image of the wireframer" loading="lazy" width="1200" height="675">
+            </picture>
+
+            <h3 class="subTitle TitleColor u-border-bottom" id="UIElements">UI Elements</h3>
+            <picture class="u-border-bottom u-border-right-Desktop" id="imgElementsOne">
+                <source srcset="../img/TechPlusTypographyCell.jpg" media="(max-width: 949px)" />
+                <source srcset="../img/TechPlusTypography.jpg" media="(min-width: 950px)" />
+                <img src="../img/TechPlusTypography.jpg" alt="image of the wireframer" loading="lazy" width="1200" height="675">
+            </picture>
+            <picture class="u-border-bottom" id="imgElementsTwo">
+                <source srcset="../img/techPlusColorsCell.jpg" media="(max-width: 949px)" />
+                <source srcset="../img/techPlusColors.jpg" media="(min-width: 950px)" />
+                <img src="../img/techPlusColors.jpg" alt="image of the wireframer" loading="lazy" width="1200" height="675">
+            </picture>
+            <picture class="u-border-bottom" id="imgElementsThree">
+                <source srcset="../img/TechPlusbuttonCell.jpg" media="(max-width: 949px)" />
+                <source srcset="../img/TechPlusbutton.jpg" media="(min-width: 950px)" />
+                <img src="../img/TechPlusbutton.jpg" alt="image of the wireframer" loading="lazy" width="1200" height="675">
+            </picture>
+
+            <h3 class="subTitle TitleColor u-border-bottom" id="Wireframes">Wireframes</h3>
+            <picture class="u-border-bottom u-border-left-Desktop" id="imgWireframesOne">
+                <source srcset="../img/TechPluswireframeDesktopCell.jpg" media="(max-width: 949px)" />
+                <source srcset="../img/TechPluswireframeDesktop.jpg" media="(min-width: 950px)" />
+                <img src="../img/TechPluswireframeDesktop.jpg" alt="image of the wireframer" loading="lazy" width="1200" height="675">
+            </picture>
+            <picture id="imgWireframesTwo">
+                <source srcset="../img/TechPluswireframeCell.jpg" media="(max-width: 949px)" />
+                <source srcset="../img/TechPluswireframeCellDesktop.jpg" media="(min-width: 950px)" />
+                <img src="../img/TechPluswireframeCellDesktop.jpg" alt="image of the wireframer" loading="lazy" width="1200" height="675">
+            </picture>
+        </section>
+
+        <section id="Development" class="u-border-top">
+            <h2 class="title TitleColor u-border-bottom">Development</h2>
+            <p class="text u-border-bottom" id="StackDeveloment"
+                data-en="<b>Stack:</b> HTML, CSS, JS"
+                data-es="<b>Stack:</b> HTML, CSS, JS"><b>Stack:</b> HTML, CSS, JS</p>
+            <p class="text u-border-bottom u-border-left-Desktop" id="textDeveloment"
+                data-en="For the development of TechPlus, I built the front-end using HTML, CSS, and JavaScript to create a responsive and dynamic web experience. I translated the UI designs into clean, semantic HTML and modular CSS, ensuring layout consistency and accessibility. JavaScript was used to enhance interactivity and improve user engagement, while keeping performance smooth and lightweight. The result is a fast, responsive site that works seamlessly across desktop, tablet, and mobile devices, reflecting both solid UX/UI design and efficient front-end implementation."
+                data-es="Para el desarrollo, construí el front-end utilizando HTML, CSS y JavaScript. Traduje los diseños de UI en HTML semántico y CSS modular, asegurando la consistencia. Se utilizó JavaScript para mejorar la interactividad y el compromiso del usuario, manteniendo el rendimiento ligero."></p>
+            <div id="buttonDeveloment">
+                <button class="buttonPurple border-bottom" onclick="window.open('https://podcast-seven-pink.vercel.app/', '_blank')">View Live Website</button>
+                <button class="buttonPurpleBorder border-bottom" onclick="window.open('https://github.com/EmilioGB-405/podcast', '_blank')">View Source Code</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <h3>Ignacio 2025</h3>
+    </footer>
+</body>
+</html>
