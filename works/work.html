@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Work</title>
+
+    <!-- Preload hero image para mejorar LCP en desktop -->
+    <link rel="preload" as="image" href="../img/mockupDesktoEcoBottle.avif" type="image/avif">
+
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/works.css">
     <script src="../js/works.js" defer></script>
@@ -11,34 +15,39 @@
 <body class="u-background-dark">
     <main class="u-border-left u-border-right">
         <header class="grid grid-colum" id="headWork">
-             <nav id="mainNav" class="flex u-border-bottom">
+            <nav id="mainNav" class="flex u-border-bottom">
                 <a href="../index.html" class="u-border-right" id="logo"> IG</a>
                 <input title="BurgerMenu" type="checkbox" id="BurgerMenu">
-                <label id="burgerIcon" 
-                for="BurgerMenu" class="u-border-left">
+                <label id="burgerIcon" for="BurgerMenu" class="u-border-left">
                     <div class="bar"></div>
-                    <div class="bar"></div><div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
                 </label>
                 <nav id="hamburgerContent" class="u-border-top u-border-left u-background-dark">
                     <ul class="border-left">
                         <li class="u-border-left-Desktop"><a href="../index.html#About" data-key="nav-about" class="text u-border-bottom">About</a></li>
-                        <li><a href="../index.html#works" data-key="nav-works" class="text  u-border-bottom">Works</a></li>
+                        <li><a href="../index.html#works" data-key="nav-works" class="text u-border-bottom">Works</a></li>
                         <li class="u-border-right-Desktop"><a href="../index.html#Contact" data-key="nav-contact" class="text u-border-bottom">Contacts</a></li>
                     </ul>
-                    <select name="language" id="languageSelect" class=" text">
+                    <select name="language" id="languageSelect" class="text">
                         <option value="en" class="u-background-dark">EN</option>
                         <option value="es" class="u-background-dark">ES</option>
                     </select>
                 </nav>
             </nav>
             <h1 class="TitleColor u-border-bottom u-border-right-Desktop" id="nameProject"></h1>
-            <picture id="imgHeader" class="u-border-bottom u-border-left-Desktop u-border-right-Desktop" id="heroPicture">
-                <source id="sourceMobile" srcset="" media="(max-width: 949px)" />
-                <source id="sourceDesktop" srcset="" media="(min-width: 950px)" />
-                <img src="" alt="cellPhone mockup" width="1200" height="675">
+
+            <!-- Hero: fetchpriority="high" para que el navegador la priorice -->
+            <picture id="imgHeader" class="u-border-bottom u-border-left-Desktop u-border-right-Desktop">
+                <source srcset="" media="(max-width: 949px)" />
+                <source srcset="" media="(min-width: 950px)" />
+                <img src="" alt="cellPhone mockup" width="1200" height="675" fetchpriority="high">
             </picture>
-            <img src="" alt="#" id="mockupTwo" class="u-border-bottom" width="1200" height="675">
-            <img src="" alt="#" id="mockupThree" width="1200" height="675">
+
+            <!-- Estos dos no son hero, lazy está bien -->
+            <img src="" alt="#" id="mockupTwo" class="u-border-bottom" width="1200" height="675" loading="lazy">
+            <img src="" alt="#" id="mockupThree" width="1200" height="675" loading="lazy">
+
             <p class="text u-border-bottom" id="explanation"></p>
             <p id="rol" class="text u-border-bottom u-border-top-Desktop"><b data-key="tools"></b></p>
             <p id="stack" class="text u-border-bottom"><b data-key="tools"></b></p>
@@ -46,19 +55,22 @@
                 <button class="buttonPurple">View Live Website</button>
             </div>
         </header>
+
         <section id="Overview" class="u-border-top">
             <h2 class="title TitleColor u-border-bottom" id="titleOverview">Overview</h2>
             <p class="text u-border-bottom u-border-right-Desktop" id="textOverview"></p>
-            <picture id="Overview">
-                <source id="OverviewCellImg" srcset="../img/OverviewCell.jpg" media="(max-width: 949px)" />
-                <source id="OverviewDesktopImg" srcset="../img/OverviewDesktop.jpg" media="(min-width: 950px)" />
-                <img src="../img/OverviewDesktop.jpg" id="imgOverview" alt="image of the wireframer" loading="lazy" width="1200" height="675">
+            <picture id="overviewPicture">
+                <source srcset="../img/OverviewCell.jpg" media="(max-width: 949px)" />
+                <source srcset="../img/OverviewDesktop.jpg" media="(min-width: 950px)" />
+                <img src="../img/OverviewDesktop.jpg" id="imgOverview" alt="image of the overview" loading="lazy" width="1200" height="675">
             </picture>
         </section>
+
         <section id="MyRole" class="u-border-top">
             <h2 class="title TitleColor u-border-bottom">My Role</h2>
             <p class="text colorText" id="roleText"></p>
         </section>
+
         <section id="Process" class="u-border-top">
             <h2 class="title TitleColor u-border-bottom">Process</h2>
             <h3 class="subTitle TitleColor u-border-bottom" id="Research">Research & Concept</h3>
@@ -66,36 +78,39 @@
             <picture class="u-border-bottom u-border-left-Desktop" id="ImgResearch">
                 <source srcset="../img/researchCell.jpg" media="(max-width: 949px)" />
                 <source srcset="../img/researchDesktop.jpg" media="(min-width: 950px)" />
-                <img src="../img/researchDesktop.jpg" alt="image of the wireframer" loading="lazy" width="1200" height="675">
+                <img src="../img/researchDesktop.jpg" alt="image of the research" loading="lazy" width="1200" height="675">
             </picture>
+
             <h3 class="subTitle TitleColor u-border-bottom" id="UIElements">UI Elements</h3>
             <picture class="u-border-bottom u-border-right-Desktop" id="imgElementsOne">
                 <source srcset="../img/ColorsButtonsCell.jpg" media="(max-width: 949px)" />
                 <source srcset="../img/ColorsButtons.jpg" media="(min-width: 950px)" />
-                <img src="../img/ColorsButtons.jpg" alt="image of the wireframer" loading="lazy" width="1200" height="675">
+                <img src="../img/ColorsButtons.jpg" alt="colors and buttons" loading="lazy" width="1200" height="675">
             </picture>
             <picture class="u-border-bottom" id="imgElementsTwo">
                 <source srcset="../img/spacingCell.jpg" media="(max-width: 949px)" />
                 <source srcset="../img/spacing.jpg" media="(min-width: 950px)" />
-                <img src="../img/spacing.jpg" alt="image of the wireframer" loading="lazy" width="1200" height="675">
+                <img src="../img/spacing.jpg" alt="spacing elements" loading="lazy" width="1200" height="675">
             </picture>
             <picture class="u-border-bottom" id="imgElementsThree">
                 <source srcset="../img/TypographyCell.jpg" media="(max-width: 949px)" />
                 <source srcset="../img/Typography.jpg" media="(min-width: 950px)" />
-                <img src="../img/Typography.jpg" alt="image of the wireframer" loading="lazy" width="1200" height="675">
+                <img src="../img/Typography.jpg" alt="typography elements" loading="lazy" width="1200" height="675">
             </picture>
+
             <h3 class="subTitle TitleColor u-border-bottom" id="Wireframes">Wireframes</h3>
             <picture class="u-border-bottom u-border-left-Desktop" id="imgWireframesOne">
                 <source srcset="../img/wireframerDesktopCell.jpg" media="(max-width: 949px)" />
                 <source srcset="../img/WireframesDesktop.jpg" media="(min-width: 950px)" />
-                <img src="../img/WireframesDesktop.jpg" alt="image of the wireframer" loading="lazy" width="1200" height="675">
+                <img src="../img/WireframesDesktop.jpg" alt="wireframe desktop" loading="lazy" width="1200" height="675">
             </picture>
             <picture id="imgWireframesTwo">
                 <source srcset="../img/wireframerDesktopCell.jpg" media="(max-width: 949px)" />
                 <source srcset="../img/wireframerDesktop.jpg" media="(min-width: 950px)" />
-                <img src="../img/wireframerDesktop.jpg" alt="image of the wireframer" loading="lazy" width="1200" height="675">
+                <img src="../img/wireframerDesktop.jpg" alt="wireframe mobile" loading="lazy" width="1200" height="675">
             </picture>
         </section>
+
         <section id="Development" class="u-border-top">
             <h2 class="title TitleColor u-border-bottom">Development</h2>
             <p class="text u-border-bottom" id="StackDeveloment"><b data-key="tools">Stack:</b> HTML, CSS, JS</p>
