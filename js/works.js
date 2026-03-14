@@ -80,6 +80,48 @@ const works = {
             stackDevelopment: "<b>Stack:</b> HTML, CSS, JS",
             textDevelopment: "Para el desarrollo, construí el front-end utilizando HTML, CSS y JavaScript. Traduje los diseños de UI en HTML semántico y CSS modular, asegurando la consistencia. Se utilizó JavaScript para mejorar la interactividad y el compromiso del usuario, manteniendo el rendimiento ligero."
         }
+    },
+
+     "Ecobottle": {
+        // Enlaces de destino
+        urlLive: "https://ecobottle.vercel.app/",
+        urlRepo: "https://github.com/IgnacioGB00/Ecobottle",
+        // Imágenes
+        hero: { mobile: "../img/mockupDesktoEcoBottle.avif", desktop: "../img/mockupDesktoEcoBottle.avif" },
+        mockupTwo: "../img/mockupmobileEcobottle.avif",
+        mockupThree: "../img/mockupTabletEcobottle.avif",
+        overviewImg: { mobile: "../img/ecoBottleDesktop.avif", desktop: "../img/ecoBottleDesktop.avif" },
+        imgResearch: { mobile: "../img/ecobottl.avif", desktop: "../img/ecobottl.avif" },
+        imgElementsOne: { mobile: "../img/ecobottleSpacing.avif", desktop: "../img/ecobottleSpacing.avif" },
+        imgElementsTwo: { mobile: "../img/ecobottleColors.avif", desktop: "../img/ecobottleColors.avif" },
+        imgElementsThree: { mobile: "../img/ecobottleComponet.avif", desktop: "../img/ecobottleComponet.avif" },
+        imgWireframesOne: { mobile: "../img/ecobottleWireframer.avif", desktop: "../img/ecobottleWireframer.avif" },
+        imgWireframesTwo: { mobile: "../img/ecobottleWireframerMobile.avif", desktop: "../img/ecobottleWireframerMobile.avif" },
+
+        en: {
+            nameProject: "Ecobottle",
+            explanation: "Ecobottle is a comprehensive web experience designed to promote sustainability through immersive 3D animations and intuitive user flows. The project focuses on bridging the gap between recycled products and digital storytelling, utilizing responsive layouts and a strong visual strategy to engage users in environmental consciousness.",
+            rol: "<b>Rol:</b> Web Designer and Front-End Developer",
+            stack: "<b>Stack:</b> HTML, CSS, JS",
+            titleOverview: "Overview",
+            textOverview: "Ecobottle is an interactive digital experience designed to transform how users perceive recycled products. By blending immersive 3D animations with a clean, functional interface, the project aims to turn sustainability into a compelling visual narrative. The focus was on creating a seamless user journey that balances aesthetic high-impact elements with optimized performance, ensuring the message of environmental consciousness is accessible across all platforms.",
+            roleText: "As the Web Designer and Front-End Developer for this project, I was responsible for the entire digital lifecycle—from initial wireframing and UI design to the final code implementation. My focus was on creating a high-performance interactive experience, developing custom 3D animations with HTML Canvas, and ensuring a fully responsive layout that maintains visual integrity across all devices.",
+            textResearch: "The project began with an in-depth analysis of sustainable digital trends and user behavior within the eco-friendly market. The research focused on how to present recycled products in a way that feels premium and modern rather than purely functional. This led to a concept centered on 'Dynamic Sustainability': using fluid 3D animations and a minimalist color palette to create an immersive narrative that guides the user from product discovery to environmental impact awareness.",
+            stackDevelopment: "<b>Stack:</b> HTML, CSS, JS",
+            textDevelopment: "The development phase focused on building a high-performance, interactive architecture using modern web standards. The core of the experience is powered by custom HTML5 Canvas animations and JavaScript (ES6+), creating a seamless 3D product showcase. I implemented advanced CSS techniques like Flexbox and Grid for a fully responsive layout, while ensuring the code was optimized for fast loading times and SEO. The project is hosted on Vercel, leveraging its continuous deployment workflow to maintain a robust and scalable digital environment."
+        },
+        es: {
+            nameProject: "Ecobottle",
+            explanation: "Ecobottle es una experiencia web integral diseñada para promover la sostenibilidad mediante animaciones 3D inmersivas y flujos de usuario intuitivos. El proyecto se enfoca en cerrar la brecha entre los productos reciclados y el storytelling digital, utilizando diseños responsivos y una sólida estrategia visual para conectar a los usuarios con la conciencia ambiental.",
+            rol: "<b>Rol:</b> Diseñador Web y Desarrollador Front-End",
+            stack: "<b>Stack:</b> HTML, CSS, JS",
+            titleOverview: "Resumen",
+            textOverview: "Ecobottle es una experiencia digital interactiva diseñada para transformar la percepción de los productos reciclados. Al combinar animaciones 3D inmersivas con una interfaz limpia y funcional, el proyecto busca convertir la sostenibilidad en una narrativa visual atractiva. El enfoque principal fue crear un recorrido de usuario fluido que equilibre elementos estéticos de alto impacto con un rendimiento optimizado, garantizando que el mensaje de conciencia ambiental sea accesible en todas las plataformas.",
+            roleText: "Como Diseñador Web y Desarrollador Front-End de este proyecto, fui responsable de todo el ciclo de vida digital, desde el wireframing inicial y el diseño de interfaz (UI) hasta la implementación final del código. Mi enfoque principal fue crear una experiencia interactiva de alto rendimiento, desarrollando animaciones 3D personalizadas con HTML Canvas y asegurando un diseño totalmente responsivo que mantiene su integridad visual en cualquier dispositivo.",
+            textResearch: "El proyecto comenzó con un análisis profundo de las tendencias digitales sostenibles y el comportamiento de los usuarios dentro del mercado ecológico. La investigación se centró en cómo presentar productos reciclados de una manera que se perciba como moderna y de alta calidad, más allá de lo puramente funcional. Esto dio lugar a un concepto basado en la 'Sostenibilidad Dinámica': el uso de animaciones 3D fluidas y una paleta de colores minimalista para crear una narrativa inmersiva que guía al usuario desde el descubrimiento del producto hasta la conciencia de su impacto ambiental.",
+            stackDevelopment: "<b>Stack:</b> HTML, CSS, JS",
+            textDevelopment: "La fase de desarrollo se centró en construir una arquitectura interactiva de alto rendimiento utilizando estándares web modernos. El núcleo de la experiencia está impulsado por animaciones personalizadas en HTML5 Canvas y JavaScript (ES6+), creando una exhibición de productos en 3D fluida. Implementé técnicas avanzadas de CSS como Flexbox y Grid para un diseño totalmente responsivo, asegurando al mismo tiempo que el código estuviera optimizado para tiempos de carga rápidos y SEO. El proyecto está alojado en Vercel, aprovechando su flujo de trabajo de despliegue continuo para mantener un entorno digital robusto y escalable."
+        }
     }
 };
 
