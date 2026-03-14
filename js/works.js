@@ -100,7 +100,7 @@ const works = {
 
         en: {
             nameProject: "Ecobottle",
-            explanation: "Ecobottle is a comprehensive web experience designed to promote sustainability through immersive 3D animations and intuitive user flows. The project focuses on bridging the gap between recycled products and digital storytelling, utilizing responsive layouts and a strong visual strategy to engage users in environmental consciousness.",
+            explanation: "Ecobottle is a comprehensive web experience designed to promote sustainability through immersive 3D animations and intuitive user flows. The project focuses on bridging the gap between recycled products and digital storytelling.",
             rol: "<b>Rol:</b> Web Designer and Front-End Developer",
             stack: "<b>Stack:</b> HTML, CSS, JS",
             titleOverview: "Overview",
@@ -112,7 +112,7 @@ const works = {
         },
         es: {
             nameProject: "Ecobottle",
-            explanation: "Ecobottle es una experiencia web integral diseñada para promover la sostenibilidad mediante animaciones 3D inmersivas y flujos de usuario intuitivos. El proyecto se enfoca en cerrar la brecha entre los productos reciclados y el storytelling digital, utilizando diseños responsivos y una sólida estrategia visual para conectar a los usuarios con la conciencia ambiental.",
+            explanation: "Ecobottle es una experiencia web integral diseñada para promover la sostenibilidad mediante animaciones 3D inmersivas y flujos de usuario intuitivos. El proyecto se enfoca en cerrar la brecha entre los productos reciclados y el storytelling digital.",
             rol: "<b>Rol:</b> Diseñador Web y Desarrollador Front-End",
             stack: "<b>Stack:</b> HTML, CSS, JS",
             titleOverview: "Resumen",
