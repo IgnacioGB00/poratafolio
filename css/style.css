@@ -116,8 +116,6 @@ header #hamburgerContent ul{
     font-weight: bold;
     color: var(--text-main);
     text-decoration: none;
-    z-index: 2;
-
 }
 #burgerIcon{
     display: flex;
@@ -125,12 +123,12 @@ header #hamburgerContent ul{
     cursor: pointer;
     gap: 10px;
     grid-column: 2/3;
-    z-index: 2;
     align-content: center;
 }
 #burgerIcon, #logo{
     padding: 10px;
     height: 100%;
+    z-index: 2;
 }
 #burgerIcon .bar{
     height: 9px;
@@ -160,8 +158,8 @@ header p{
     position: absolute;
     top: -2vh;
     right: -100%;
-   /*  width: 100%;
-    height: 100vh; */
+    width: 100%;
+   
     z-index: 1;
     display: flex;
     flex-direction: column;
