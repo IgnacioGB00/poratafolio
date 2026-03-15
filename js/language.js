@@ -118,3 +118,30 @@ TechPlus.addEventListener('mouseleave', () => {
         imgTechPlus.remove();
     }, 500); 
 }); 
+
+let ecoHover = document.getElementById('ecoHover');
+let ecoImg = document.createElement('img');
+ecoImg.src = 'img/mockupDesktoEcoBottle.avif';
+ecoImg.style.width = '100%';
+ecoImg.style.height = '100%';
+ecoImg.style.objectFit = 'cover';
+ecoImg.alt = 'Mockup of the project';
+ecoImg.classList.add('fade-in-img');
+
+ecoHover.addEventListener('mouseenter', () => {
+    ConteinerImg.appendChild(ecoImg);
+    
+    // Usamos un pequeñísimo delay para que el navegador detecte el cambio y anime
+    setTimeout(() => {
+        ecoImg.classList.add('visible');
+    }, 10); 
+});
+
+ecoHover.addEventListener('mouseleave', () => {
+    ecoImg.classList.remove('visible');
+    
+    // Esperamos a que termine la animación (500ms) antes de borrar el elemento
+    setTimeout(() => {
+        ecoImg.remove();
+    }, 500); 
+});
