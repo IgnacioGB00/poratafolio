@@ -129,7 +129,7 @@ header #hamburgerContent ul{
     z-index: 2;
 }
 #burgerIcon, #logo{
-    padding: 20px 1em;
+    padding: 4vh 1em;
 }
 #burgerIcon .bar{
     height: 9px;

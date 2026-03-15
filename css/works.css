@@ -6,10 +6,12 @@ picture{
     align-items: center;
     justify-content: center;
     width: 100%;
+    height: auto;
 }
 picture img{
     width: 100%;
     padding: 1em;
+    height: auto;
 }
 #headWork img,
 #headWork source {
@@ -17,6 +19,7 @@ picture img{
   width: 100%;
   object-fit: cover;
 }
+
 .subTitle{
     text-align: center;
     padding: 1em;
