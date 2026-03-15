@@ -5,7 +5,7 @@
 
   --text-main: #C3E2FF;
   --text-title: #91BBE2;
-  --accent-main: #CCFF00;;
+  --accent-main: #CCFF00;
 
   --border-line: 2px solid var(--purple-border);
   --radius-md: 10px;
@@ -281,9 +281,18 @@ section p{
 
 .project li a{
     font-size: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+
+    & img{
+        width: 1em;
+    }
 }
 
-.project li a, .urlContact li a{
+
+.urlContact li a{
     padding: 1em;
     display: block;
      word-break: break-word;
