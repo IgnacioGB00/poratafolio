@@ -109,7 +109,7 @@ header #hamburgerContent ul{
 #mainNav{
     grid-row: 1/2;
     display: grid;
-    height: 13vh;
+    align-items: center;
 }
 #logo{
     font-size: 36px;
@@ -117,7 +117,6 @@ header #hamburgerContent ul{
     color: var(--text-main);
     text-decoration: none;
     z-index: 2;
-    height: 100%;
 
 }
 #burgerIcon{
@@ -127,9 +126,11 @@ header #hamburgerContent ul{
     gap: 10px;
     grid-column: 2/3;
     z-index: 2;
+    align-content: center;
 }
 #burgerIcon, #logo{
-    padding: 3vh 1em;
+    padding: 10px;
+    height: 100%;
 }
 #burgerIcon .bar{
     height: 9px;
